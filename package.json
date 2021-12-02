@@ -1,14 +1,16 @@
 {
-  "name": "photosnap",
-  "version": "1.0.0",
-  "description": "This is a solution to the **‘…’** challenge on Frontend Mentor(link)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.9.4"
-  }
+   "name": "photosnap",
+   "version": "1.0.0",
+   "description": "This is a solution to the **‘…’** challenge on Frontend Mentor(link)",
+   "main": "index.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "parcel src/index.html",
+      "build": "parcel build src/index.html"
+   },
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "parcel-bundler": "^1.9.4"
+   }
 }
