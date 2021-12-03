@@ -14,7 +14,7 @@
                <img src="/logo.5b21726c.svg" alt="">
             </div>
             <nav class="nav--pm">
-               <ul class="nav--pm__list">
+               <ul class="nav--pm__list" role="list">
                   <li class="nav--pm__list__item"><a href="#">Stories</a></li>
                   <li class="nav--pm__list__item"><a href="#">Features</a></li>
                   <li class="nav--pm__list__item"><a href="#">Pricing</a></li>
@@ -25,7 +25,14 @@
       </header>
       <!-- / header -->
       <main id="main-content" class="main">
-         <div class="grid-container grid-container--two-col" role="grid"></div>
+         <div class="grid-container grid-container--split" role="grid">
+            <div role="gridcell"></div>
+            <div role="gridcell"></div>
+            <div role="gridcell"></div>
+            <div role="gridcell"></div>
+            <div role="gridcell"></div>
+            <div role="gridcell"></div>
+         </div>
       </main>
       <!-- / main -->
 
@@ -57,7 +64,7 @@
             <!-- / social -->
             <div class="grid-container--footer__nav" role="gridcell">
                <nav class="nav--sd">
-                  <ul class="nav--sd__list">
+                  <ul class="nav--sd__list" role="list">
                      <li class="nav--sd__list__item"><a href="#">Home</a></li>
                      <li class="nav--sd__list__item">
                         <a href="#">Stories</a>
