@@ -9,14 +9,3 @@
       background-color: hsl(var(--clr-#{$color}));
    }
 }
-
-@each $color, $map in $color-shades {
-   @each $shade, $val in $map {
-      .text-#{$color}-#{$shade} {
-         color: hsl(var(--clr-#{$color}-#{$shade}));
-      }
-      .bg-#{$color}-#{$shade} {
-         background-color: hsl(var(--clr-#{$color}-#{$shade}));
-      }
-   }
-}

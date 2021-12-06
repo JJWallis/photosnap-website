@@ -3,8 +3,4 @@
 .grid-container {
    display: grid;
    gap: var(--gap, 2rem);
-   @include mq(min-width, tablet) {
-      grid-auto-flow: column;
-      grid-auto-columns: 1fr;
-   }
 }
