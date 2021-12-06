@@ -1,0 +1,35 @@
+@use 'abstracts' as *;
+
+body {
+   @include flexy($dir: column);
+}
+
+main {
+   flex-grow: 1;
+}
+
+fieldset {
+   padding: 0;
+   margin: 0;
+   border: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+button {
+   border: none;
+   outline: none;
+   background: transparent;
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+input,
+textarea {
+   outline: none;
+   width: 100%;
+   border: 0;
+}

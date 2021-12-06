@@ -1,0 +1,131 @@
+@use 'breakpoints' as *;
+
+// =========================================
+// BEM
+// =========================================
+
+@mixin e($element) {
+   &__#{$element} {
+      @content;
+   }
+}
+
+@mixin m($modifier) {
+   &--#{$modifier} {
+      @content;
+   }
+}
+
+// =========================================
+// flex
+// =========================================
+
+@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $align: null) {
+   display: $disp;
+   flex-direction: $dir;
+   flex-wrap: $wrap;
+   justify-content: $just;
+   align-items: $align;
+}
+
+// =========================================
+// position
+// =========================================
+
+@mixin position($pos, $width: null, $height: null, $z-index: null) {
+   position: $pos;
+   width: $width;
+   height: $height;
+   z-index: $z-index;
+   @content;
+}
+
+// =========================================
+// bg-img
+// =========================================
+
+@mixin bg-img($img: null, $position: null, $size: null) {
+   background-image: url('#{$img}');
+   background-repeat: no-repeat;
+   background-position: $position;
+   background-size: $size;
+}
+
+// =========================================
+// pseudo-el
+// =========================================
+
+@mixin p-el(
+   $el,
+   $content: '',
+   $position: absolute,
+   $width: null,
+   $height: null
+) {
+   @if $el == 'before' or $el == 'after' {
+      &::#{$el} {
+         content: $content;
+         position: $position;
+         display: block;
+         width: $width;
+         height: $height;
+         @content;
+      }
+   } @else {
+      @error 'Before or after string required for valid pseudo element.';
+   }
+}
+
+// =========================================
+// uppercase
+// =========================================
+
+@mixin uc() {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   // easier to read when applied  to non-headings
+}
+
+// =========================================
+// media query
+// =========================================
+
+@mixin mq($width, $key) {
+   @if $width ==
+      'max-width' or
+      $width ==
+      'min-width' or
+      $key ==
+      'tablet' or
+      $key ==
+      'desktop'
+   {
+      @media only screen and ($width: map-get($breakpoints, $key)) {
+         @content;
+      }
+   } @else {
+      @error 'Tablet, medium, desktop & valid width required for media query.';
+   }
+}
+
+@mixin mqs($minWidth, $minKey, $maxWidth, $maxKey) {
+   @media only screen and ($minWidth: map-get($breakpoints, $minKey)) and ($maxWidth: map-get($breakpoints, $maxKey)) {
+      @content;
+   }
+}
+
+// =========================================
+// feature queries
+// =========================================
+
+@mixin fq($prop, $val) {
+   @supports (#{$prop}: $val) {
+      @content;
+   }
+}
+
+@mixin fqs($selector) {
+   @supports selector(#{$selector}) {
+      @content;
+   }
+}

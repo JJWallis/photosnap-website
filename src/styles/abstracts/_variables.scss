@@ -1,0 +1,64 @@
+@use 'layout' as *;
+@use 'font-sizes' as *;
+@use 'mixins' as *;
+@use 'colors' as *;
+
+:root {
+   @each $color, $map in $color-shades {
+      @each $shade, $val in $map {
+         --clr-#{$color}-#{$shade}: #{$val};
+      }
+   }
+
+   @each $color, $value in $colors {
+      --clr-#{$color}: #{$value};
+   }
+
+   @each $screen-size, $map in $type-scale {
+      @if $screen-size == mobile {
+         @each $feature, $nested-map in $map {
+            @each $prop, $value in $nested-map {
+               --#{$prop}: #{$value};
+            }
+         }
+      } @else if $screen-size == tablet {
+         @include mq(min-width, tablet) {
+            @each $feature, $nested-map in $map {
+               @each $prop, $value in $nested-map {
+                  --#{$prop}: #{$value};
+               }
+            }
+         }
+      } @else if $screen-size == desktop {
+         @include mq(min-width, desktop) {
+            @each $feature, $nested-map in $map {
+               @each $prop, $value in $nested-map {
+                  --#{$prop}: #{$value};
+               }
+            }
+         }
+      }
+   }
+
+   @each $screen-size, $map in $layout {
+      @if $screen-size == mobile {
+         @each $prop, $value in $map {
+            --#{$prop}: #{$value};
+         }
+      } @else if $screen-size == tablet {
+         @include mq(min-width, tablet) {
+            @each $prop, $value in $map {
+               --#{$prop}: #{$value};
+            }
+         }
+      } @else if $screen-size == desktop {
+         @include mq(min-width, desktop) {
+            @each $prop, $value in $map {
+               --#{$prop}: #{$value};
+            }
+         }
+      }
+   }
+
+   --ff-pm: 'Rubik', sans-serif;
+}

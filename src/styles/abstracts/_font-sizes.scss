@@ -1,0 +1,36 @@
+$type-scale: (
+   mobile: (
+      size: (
+         fs-500: 3.8rem,
+         fs-400: 2.5rem,
+         fs-300: 1.2rem,
+         fs-200: 1.2rem,
+         fs-100: 1rem,
+      ),
+      line-height: (
+         lh-500: 1,
+         lh-400: 1,
+         lh-300: 1.5556,
+         lh-200: 1.666,
+         lh-100: 1.5,
+      ),
+      weight: (
+         fw-extra-bold: 800,
+         fw-bold: 700,
+         fw-semi-bold: 600,
+         fw-medium: 500,
+         fw-regular: 400,
+         fw-light: 300,
+      ),
+   ),
+   tablet: (
+      size: (),
+      line-height: (),
+      weight: (),
+   ),
+   desktop: (
+      size: (),
+      line-height: (),
+      weight: (),
+   ),
+);
