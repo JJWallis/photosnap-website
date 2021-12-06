@@ -13,8 +13,6 @@
       <link rel="stylesheet" href="./styles/main.scss" />
    </head>
 
-   <!-- AXE Accessibility extension - fix issues!! -->
-
    <body class="home">
       <!-- <a href="#main-content" class="skip-to-content">Skip to content</a> -->
       <header class="header--pm">
@@ -22,7 +20,7 @@
             <div class="logo logo--pm">
                <img src="./assets/shared/desktop/logo.svg" alt="" />
             </div>
-            <nav class="nav--pm">
+            <nav class="nav--pm" aria-label="Header navigation">
                <ul class="nav--pm__list" role="list">
                   <li class="nav--pm__list__item">
                      <a href="./stories.html">Stories</a>
@@ -42,7 +40,7 @@
 
       <main id="main-content" class="main">
          <div class="grid-container grid-container--two-cols" role="grid">
-            <div class="grid-item--text grid-item--dark" role="gridcell row">
+            <div class="grid-item--text grid-item--dark" role="gridcell">
                <section>
                   <h1>Create and share your photo stories</h1>
                   <p class="desc">
@@ -54,7 +52,7 @@
                </section>
             </div>
             <!-- / share -->
-            <div class="grid-item--picture" role="gridcell row">
+            <div class="grid-item--picture" role="gridcell">
                <picture>
                   <source
                      srcset="./assets/home/mobile/create-and-share.jpg"
@@ -71,7 +69,7 @@
                </picture>
             </div>
             <!-- / share-img -->
-            <div class="grid-item--picture" role="gridcell row">
+            <div class="grid-item--picture" role="gridcell">
                <picture>
                   <source
                      srcset="./assets/home/mobile/beautiful-stories.jpg"
@@ -88,7 +86,7 @@
                </picture>
             </div>
             <!-- / beautiful-img -->
-            <div class="grid-item--text grid-item--light" role="gridcell row">
+            <div class="grid-item--text grid-item--light" role="gridcell">
                <section>
                   <h2>Beautiful stories everytime</h2>
                   <p class="desc">
@@ -100,7 +98,7 @@
                </section>
             </div>
             <!-- / beautiful -->
-            <div class="grid-item--text grid-item--light" role="gridcell row">
+            <div class="grid-item--text grid-item--light" role="gridcell">
                <section>
                   <h2>Designed for everyone</h2>
                   <p class="desc">
@@ -112,7 +110,7 @@
                </section>
             </div>
             <!-- / everyone -->
-            <div class="grid-item--picture" role="gridcell row">
+            <div class="grid-item--picture" role="gridcell">
                <picture>
                   <source
                      srcset="./assets/home/mobile/designed-for-everyone.jpg"
@@ -246,11 +244,11 @@
             class="grid-container grid-container--footer container-wrapper"
             role="grid"
          >
-            <div class="logo logo--sd" role="gridcell row">
+            <div class="logo logo--sd" role="gridcell">
                <img src="./assets/shared/desktop/logo-white.svg" alt="" />
             </div>
             <!-- / logo -->
-            <div class="grid-container--footer__social" role="gridcell row">
+            <div class="grid-container--footer__social" role="gridcell">
                <ul class="social-list">
                   <li class="social-list__item">
                      <a
@@ -284,7 +282,7 @@
                </ul>
             </div>
             <!-- / social -->
-            <div class="grid-container--footer__nav" role="gridcell row">
+            <div class="grid-container--footer__nav" role="gridcell">
                <nav class="nav--sd">
                   <ul class="nav--sd__list" role="list">
                      <li class="nav--sd__list__item"><a href="#">Home</a></li>
@@ -301,11 +299,11 @@
                </nav>
             </div>
             <!-- / nav -->
-            <div class="grid-container--footer__cta" role="gridcell row">
+            <div class="grid-container--footer__cta" role="gridcell">
                <a href="#" class="btn btn--light">Get an invite</a>
             </div>
             <!-- / cta -->
-            <div class="grid-container--footer__copyright" role="gridcell row">
+            <div class="grid-container--footer__copyright" role="gridcell">
                <small class="copyright"
                   >Copyright 2019. All Rights Reserved</small
                >
