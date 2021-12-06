@@ -19,6 +19,18 @@ dd {
    margin: 0;
 }
 
+/*  permission to use hard wraps when no soft wrap opportunties */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   overflow-wrap: break-word;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -38,6 +50,7 @@ body {
    text-rendering: optimizeSpeed;
    line-height: 1.5;
    overflow-x: hidden;
+   -webkit-font-smoothing: antialiased;
 }
 
 /* A elements that don't have a class get default styles */
@@ -46,10 +59,14 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
+
 img,
-picture {
-   max-width: 100%;
+picture,
+video,
+canvas,
+svg {
    display: block;
+   max-width: 100%;
 }
 
 /* Inherit fonts for inputs and buttons */
