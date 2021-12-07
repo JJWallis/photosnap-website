@@ -23,15 +23,22 @@
    }
 
    @include m(text) {
-      //    arrow
+      outline: 1px solid white;
+      width: 21%;
+      position: relative;
+      @include p-el(after, url('../assets/shared/desktop/arrow-white.svg')) {
+         right: 0;
+         top: 50%;
+         transform: translateY(-50%);
+      }
       &:hover {
          text-decoration: underline;
       }
       @include m(dark) {
-         //   dark arrow color
+         @include p-el(after, url('../assets/shared/desktop/arrow.svg'));
       }
       @include m(light) {
-         //   light arrow color
+         @include p-el(after, url('../assets/shared/desktop/arrow-white.svg'));
       }
    }
 }
