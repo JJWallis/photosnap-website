@@ -1,0 +1,30 @@
+@use 'abstracts' as *;
+
+.btn {
+   // typography
+   transition: background-color var(--btn-transition),
+      color var(--btn-transition);
+   @include m(bg) {
+      padding: 1em 2em;
+
+      @include m(dark) {
+         &:hover {
+            background-color: hsl(var(--clr-light-grey));
+            color: hsl(var(--clr-pure-black));
+         }
+      }
+
+      @include m(light) {
+         &:hover {
+            background-color: hsl(var(--clr-pure-white));
+            color: hsl(var(--clr-pure-black));
+         }
+      }
+   }
+
+   @include m(text-dark) {
+   }
+
+   @include m(text-light) {
+   }
+}

@@ -4,6 +4,9 @@
 @use 'colors' as *;
 
 :root {
+   --ff-pm: 'DM Sans', sans-serif;
+   --btn-transition: 0.3s linear;
+
    @each $color, $value in $colors {
       --clr-#{$color}: #{$value};
    }
@@ -53,6 +56,4 @@
          }
       }
    }
-
-   --ff-pm: 'DM Sans', sans-serif;
 }
