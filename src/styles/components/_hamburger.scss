@@ -17,8 +17,6 @@
    @include mq(max-width, tablet) {
       display: block;
       position: relative;
-      // padding: 1rem;
-      transition: transform 250ms ease-in-out;
 
       &::before,
       &::after {
@@ -42,7 +40,12 @@
       }
 
       &[data-visible='true'] {
-         transform: rotate(0.625turn);
+         &::before {
+            transform: rotate(46deg) translate(9px, 2.5px);
+         }
+         &::after {
+            transform: rotate(-46deg) translate(3px, 3px);
+         }
       }
    }
 }
