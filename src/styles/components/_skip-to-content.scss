@@ -1,8 +1,12 @@
 @use 'abstracts' as *;
 
 .skip-to-content {
+   @include position(absolute) {
+      left: 50%;
+   }
    text-align: var(--center);
-   transform: translateY(-100%);
+
+   transform: translate(-50%, 0%);
    transition: transform var(--btn-transition);
    &:focus,
    &:hover {
