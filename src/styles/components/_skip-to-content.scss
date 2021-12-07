@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .skip-to-content {
-   @include position(absolute) {
+   @include position(absolute, $z-index: 9999) {
       left: 50%;
    }
    text-align: var(--center);
