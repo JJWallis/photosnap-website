@@ -5,7 +5,7 @@
 
 :root {
    --ff-pm: 'DM Sans', sans-serif;
-   --btn-transition: 0.3s linear;
+   --btn-transition: 0.2s linear;
 
    @each $color, $value in $colors {
       --clr-#{$color}: #{$value};

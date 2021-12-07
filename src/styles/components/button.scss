@@ -10,7 +10,7 @@
 
       @include m(dark) {
          &:hover {
-            background-color: hsl(var(--clr-light-grey));
+            background-color: hsl(var(--clr-light-grey-btn));
             color: hsl(var(--clr-pure-black));
          }
       }
