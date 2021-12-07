@@ -14,7 +14,7 @@
    }
 
    @include m(hr) {
-      margin: 1.2rem auto 1.5rem;
+      margin: 0.7rem auto 1.4rem;
       width: 90%;
       border: 0;
       height: 0;
@@ -27,22 +27,28 @@
 
 .nav {
    & a {
+      display: block;
       transition: color var(--nav-links-transition);
       &:hover {
          color: hsl(var(--clr-light-grey-btn));
+      }
+      @include mq(max-width, tablet) {
+         width: 100%;
       }
    }
 
    @include m(pm) {
       @include e(list) {
-         @include flexy($dir: column, $align: center);
-         gap: 0.8rem;
          @include mq(min-width, tablet) {
             @include flexy($dir: row);
             gap: 1rem;
          }
          @include e(item) {
          }
+      }
+
+      & a {
+         padding-block: 0.5rem;
       }
    }
 }
