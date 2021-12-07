@@ -10,6 +10,18 @@
          hsl(var(--clr-accent-pink)),
          hsl(var(--clr-accent-blue))
       );
+
+      @include mq(max-width, tablet) {
+         width: 180px;
+         height: 5px;
+         left: 30px;
+         background-image: linear-gradient(
+            to right,
+            hsl(var(--clr-accent-orange)) 10%,
+            hsl(var(--clr-accent-pink)) 30%,
+            hsl(var(--clr-accent-blue)) 40%
+         );
+      }
    }
 
    @include m(horizontal) {
