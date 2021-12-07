@@ -5,11 +5,13 @@
 .nav-mobile {
    @include m(container) {
       @include mq(max-width, tablet) {
+         opacity: 0;
          padding: 3rem 0 5.5rem;
          @include position(fixed, $z-index: 9997, $width: 100%) {
             top: 65px;
             left: 0;
          }
+         transition: opacity 0.3s ease-in-out;
       }
    }
 
