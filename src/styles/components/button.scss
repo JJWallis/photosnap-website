@@ -1,6 +1,7 @@
 @use 'abstracts' as *;
 
 .btn {
+   display: inline-block;
    @include m(bg) {
       transition: background-color var(--btn-transition),
          color var(--btn-transition);
