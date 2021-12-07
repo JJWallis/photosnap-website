@@ -11,3 +11,19 @@
       }
    }
 }
+
+.kevin-hb {
+   background-color: hsl(var(--clr-pure-black));
+   display: block;
+   position: relative;
+   width: 2em;
+   height: 2px;
+   border-radius: 1em;
+   @include p-el(before, $width: 2em, $height: 2px) {
+      position: absolute;
+      bottom: -7px;
+      border-radius: 1em;
+      background-color: hsl(var(--clr-pure-black));
+      display: block;
+   }
+}
