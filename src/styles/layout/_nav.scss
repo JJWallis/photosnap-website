@@ -5,9 +5,11 @@
 .nav-mobile {
    @include m(container) {
       @include mq(max-width, tablet) {
-         outline: 1px solid blue;
-         position: relative;
          padding-block: 3rem 4rem;
+         @include position(fixed, $z-index: 9997, $width: 100%) {
+            top: 80px;
+            left: 0;
+         }
       }
    }
 
