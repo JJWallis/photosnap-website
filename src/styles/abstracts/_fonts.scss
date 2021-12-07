@@ -15,10 +15,16 @@
                   line-height: var(--#{$property});
                }
             }
-         } @else {
+         } @else if $feature == weight {
             @each $property, $value in $nested-map {
                .#{$property} {
                   font-weight: var(--#{$property});
+               }
+            }
+         } @else {
+            @each $property, $value in $nested-map {
+               .#{$property} {
+                  letter-spacing: var(--#{$property});
                }
             }
          }
