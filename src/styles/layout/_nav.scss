@@ -4,6 +4,7 @@
 
 .nav-mobile-container {
    outline: 1px solid blue;
+   position: relative;
    padding-block: 3rem 4rem;
    @include e(hr) {
       width: 90%;

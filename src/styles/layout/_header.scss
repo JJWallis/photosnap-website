@@ -12,5 +12,19 @@
             @include flexy($just: space-between, $align: center);
          }
       }
+
+      @include e(btn) {
+         @include m(mb) {
+            @include position(absolute, $z-index: 9995);
+            @include mq(min-width, tablet) {
+               display: none;
+            }
+         }
+         @include m(wd) {
+            @include mq(max-width, tablet) {
+               display: none;
+            }
+         }
+      }
    }
 }
