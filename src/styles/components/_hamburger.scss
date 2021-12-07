@@ -5,7 +5,8 @@
    @include mq(max-width, tablet) {
       display: block;
       @include position(absolute, $z-index: 9000) {
-         top: 0;
+         top: 50%;
+         transform: translateY(-50%);
          right: 0;
       }
    }

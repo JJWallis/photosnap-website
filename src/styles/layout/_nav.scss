@@ -26,6 +26,13 @@
 }
 
 .nav {
+   & a {
+      transition: color var(--nav-links-transition);
+      &:hover {
+         color: hsl(var(--clr-light-grey-btn));
+      }
+   }
+
    @include m(pm) {
       @include e(list) {
          @include flexy($dir: column, $align: center);
