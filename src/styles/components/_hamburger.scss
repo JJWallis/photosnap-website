@@ -13,17 +13,27 @@
 }
 
 .kevin-hb {
-   background-color: hsl(var(--clr-pure-black));
-   display: block;
-   position: relative;
-   width: 2em;
-   height: 2px;
-   border-radius: 1em;
-   @include p-el(before, $width: 2em, $height: 2px) {
-      position: absolute;
-      bottom: -7px;
-      border-radius: 1em;
-      background-color: hsl(var(--clr-pure-black));
+   @include mq(max-width, tablet) {
       display: block;
+      position: relative;
+      padding: 1rem;
+
+      &::before,
+      &::after {
+         position: absolute;
+         border-radius: 1em;
+         background-color: hsl(var(--clr-pure-black));
+         display: block;
+         width: 2em;
+         height: 2px;
+      }
+
+      @include p-el(before) {
+         bottom: 12px;
+      }
+
+      @include p-el(after) {
+         top: 10px;
+      }
    }
 }
