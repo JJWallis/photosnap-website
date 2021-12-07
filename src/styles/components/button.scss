@@ -2,9 +2,10 @@
 
 .btn {
    // typography
-   transition: background-color var(--btn-transition),
-      color var(--btn-transition);
+
    @include m(bg) {
+      transition: background-color var(--btn-transition),
+         color var(--btn-transition);
       padding: 1em 2em;
 
       @include m(dark) {
@@ -16,15 +17,22 @@
 
       @include m(light) {
          &:hover {
-            background-color: hsl(var(--clr-pure-white));
+            background-color: hsl(var(--clr-pure-white) / 0.8);
             color: hsl(var(--clr-pure-black));
          }
       }
    }
 
-   @include m(text-dark) {
-   }
-
-   @include m(text-light) {
+   @include m(text) {
+      //    arrow
+      &:hover {
+         text-decoration: underline;
+      }
+      @include m(dark) {
+         //   dark arrow color
+      }
+      @include m(light) {
+         //   light arrow color
+      }
    }
 }
