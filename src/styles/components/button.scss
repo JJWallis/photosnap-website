@@ -23,22 +23,31 @@
    }
 
    @include m(text) {
-      outline: 1px solid white;
-      width: 170px;
       position: relative;
       @include p-el(after) {
-         right: 0;
+         right: -55px;
          top: 50%;
          transform: translateY(-40%);
       }
       &:hover {
          text-decoration: underline;
       }
+
       @include m(dark) {
          @include p-el(after, url('../assets/shared/desktop/arrow.svg'));
       }
+
       @include m(light) {
          @include p-el(after, url('../assets/shared/desktop/arrow-white.svg'));
+      }
+
+      @include m(story) {
+         width: 100%;
+         @include p-el(after) {
+            right: 0;
+         }
+         //  reset content img to empty str?
+         //  nested inside light + dark
       }
    }
 }
