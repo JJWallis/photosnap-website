@@ -2,4 +2,10 @@
 
 .skip-to-content {
    text-align: var(--center);
+   transform: translateY(-100%);
+   transition: transform var(--btn-transition);
+   &:focus,
+   &:hover {
+      transform: translateY(0);
+   }
 }
