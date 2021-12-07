@@ -1,8 +1,6 @@
 @use 'abstracts' as *;
 
 .btn {
-   // typography
-
    @include m(bg) {
       transition: background-color var(--btn-transition),
          color var(--btn-transition);
