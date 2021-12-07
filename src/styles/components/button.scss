@@ -43,11 +43,10 @@
 
       @include m(story) {
          width: 100%;
-         @include p-el(after) {
+         &::after {
             right: 0;
          }
          //  reset content img to empty str?
-         //  manually target pseudo element with ::after
       }
    }
 }
