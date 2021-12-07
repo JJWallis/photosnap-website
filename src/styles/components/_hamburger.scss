@@ -1,9 +1,10 @@
 @use 'abstracts' as *;
 
-.hamburger {
+.hamburger--btn {
    display: none;
    @include mq(max-width, tablet) {
       display: block;
+      padding: 1em 2em 1em 0;
       @include position(absolute, $z-index: 9000) {
          top: 50%;
          transform: translateY(-50%);
@@ -12,11 +13,12 @@
    }
 }
 
-.kevin-hb {
+.hamburger {
    @include mq(max-width, tablet) {
       display: block;
       position: relative;
-      padding: 1rem;
+      // padding: 1rem;
+      transition: transform 250ms ease-in-out;
 
       &::before,
       &::after {
@@ -26,14 +28,17 @@
          display: block;
          width: 2em;
          height: 2px;
+         left: 0;
+         right: 0;
+         transition: transform 250ms ease-in-out;
       }
 
       @include p-el(before) {
-         bottom: 12px;
+         bottom: 3px;
       }
 
       @include p-el(after) {
-         top: 10px;
+         top: 3px;
       }
    }
 }
