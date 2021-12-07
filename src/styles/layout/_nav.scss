@@ -14,6 +14,7 @@
    }
 
    @include m(hr) {
+      margin: 1rem 0 1.3rem;
       width: 90%;
       border: 0;
       height: 0;
@@ -24,11 +25,13 @@
    }
 }
 
-// .nav {
-//    @include m(pm) {
-//       @include e(list) {
-//          @include e(item) {
-//          }
-//       }
-//    }
-// }
+.nav {
+   @include m(pm) {
+      @include e(list) {
+         @include flexy($dir: column, $align: center);
+         gap: 0.8rem;
+         @include e(item) {
+         }
+      }
+   }
+}
