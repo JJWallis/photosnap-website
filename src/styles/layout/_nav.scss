@@ -4,6 +4,7 @@
 
 .nav-mobile-container {
    outline: 1px solid blue;
+   padding-block: 3rem 4rem;
    @include e(hr) {
       @include mq(min-width, tablet) {
          display: none;
