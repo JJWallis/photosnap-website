@@ -13,6 +13,9 @@
          }
          transition: opacity 0.3s ease-in-out;
       }
+      &[data-visible='true'] {
+         opacity: 1;
+      }
    }
 
    @include m(hr) {
@@ -53,4 +56,8 @@
          padding-block: 0.5rem;
       }
    }
+}
+
+body[data-visible='true'] {
+   overflow-y: hidden;
 }
