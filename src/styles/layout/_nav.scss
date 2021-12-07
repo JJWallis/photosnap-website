@@ -2,11 +2,16 @@
 
 // Mobile
 
-.nav-mobile-container {
-   outline: 1px solid blue;
-   position: relative;
-   padding-block: 3rem 4rem;
-   @include e(hr) {
+.nav-mobile {
+   @include m(container) {
+      @include mq(max-width, tablet) {
+         outline: 1px solid blue;
+         position: relative;
+         padding-block: 3rem 4rem;
+      }
+   }
+
+   @include m(hr) {
       width: 90%;
       border: 0;
       height: 0;
