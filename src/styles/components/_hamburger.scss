@@ -40,5 +40,9 @@
       @include p-el(after) {
          top: 3px;
       }
+
+      &[data-visible='true'] {
+         transform: rotate(0.625turn);
+      }
    }
 }
