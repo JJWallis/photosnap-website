@@ -5,16 +5,16 @@
 .nav-mobile {
    @include m(container) {
       @include mq(max-width, tablet) {
-         padding-block: 3rem 4rem;
+         padding: 3rem 0 5.5rem;
          @include position(fixed, $z-index: 9997, $width: 100%) {
-            top: 80px;
+            top: 65px;
             left: 0;
          }
       }
    }
 
    @include m(hr) {
-      margin: 1rem 0 1.3rem;
+      margin: 1.2rem auto 1.5rem;
       width: 90%;
       border: 0;
       height: 0;
@@ -30,6 +30,10 @@
       @include e(list) {
          @include flexy($dir: column, $align: center);
          gap: 0.8rem;
+         @include mq(min-width, tablet) {
+            @include flexy($dir: row);
+            gap: 1rem;
+         }
          @include e(item) {
          }
       }
