@@ -18,8 +18,8 @@
          background-image: linear-gradient(
             to right,
             hsl(var(--clr-accent-orange)) 5%,
-            hsl(var(--clr-accent-pink)) 15%,
-            hsl(var(--clr-accent-blue)) 40%
+            hsl(var(--clr-accent-pink)) 13%,
+            hsl(var(--clr-accent-blue)) 50%
          );
       }
    }
@@ -31,7 +31,7 @@
          background-image: linear-gradient(
             to right,
             hsl(var(--clr-accent-orange)) 5%,
-            hsl(var(--clr-accent-pink)) 20%,
+            hsl(var(--clr-accent-pink)) 15%,
             hsl(var(--clr-accent-blue)) 40%
          );
          transition: opacity var(--btn-transition);
