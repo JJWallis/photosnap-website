@@ -1,0 +1,29 @@
+@use 'abstracts' as *;
+
+.accent-bar {
+   @include p-el(before, $width: 5px, $height: 100%) {
+      background-image: linear-gradient(
+         to top,
+         hsl(var(--clr-accent-orange)),
+         hsl(var(--clr-accent-pink)),
+         hsl(var(--clr-accent-blue))
+      );
+   }
+
+   @include m(story) {
+      @include p-el(before, $width: 100%, $height: 5px);
+      background-image: linear-gradient(
+         to right,
+         hsl(var(--clr-accent-orange)),
+         hsl(var(--clr-accent-pink)),
+         hsl(var(--clr-accent-blue))
+      );
+      // change - more blue accent bar
+      // opacity + translateY
+   }
+}
+
+.grid-item--dark__content {
+   outline: 2px solid black;
+   position: relative;
+}
