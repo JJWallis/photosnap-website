@@ -17,12 +17,11 @@
    }
 }
 
-.nav {
-   @include m(pm) {
-      @include e(list) {
-         @include e(item) {
-            text-align: var(--center-left-tablet);
-         }
-      }
-   }
-}
+// .nav {
+//    @include m(pm) {
+//       @include e(list) {
+//          @include e(item) {
+//          }
+//       }
+//    }
+// }

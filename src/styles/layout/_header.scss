@@ -19,7 +19,6 @@
                left: 50%;
                transform: translateX(-50%);
             }
-            text-align: var(--center);
             @include mq(min-width, tablet) {
                display: none;
             }
