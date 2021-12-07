@@ -1,0 +1,8 @@
+@use 'abstracts' as *;
+
+.story {
+   position: relative;
+   &:hover::before {
+      opacity: 1;
+   }
+}
