@@ -6,8 +6,22 @@
    outline: 1px solid blue;
    padding-block: 3rem 4rem;
    @include e(hr) {
+      width: 90%;
+      border: 0;
+      height: 0;
+      border-top: 1px solid hsl(var(--clr-light-grey-body) / 0.8);
       @include mq(min-width, tablet) {
          display: none;
+      }
+   }
+}
+
+.nav {
+   @include m(pm) {
+      @include e(list) {
+         @include e(item) {
+            text-align: var(--center-left-tablet);
+         }
       }
    }
 }
