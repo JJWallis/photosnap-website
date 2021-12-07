@@ -24,12 +24,12 @@
 
    @include m(text) {
       outline: 1px solid white;
-      width: 21%;
+      width: 170px;
       position: relative;
-      @include p-el(after, url('../assets/shared/desktop/arrow-white.svg')) {
+      @include p-el(after) {
          right: 0;
          top: 50%;
-         transform: translateY(-50%);
+         transform: translateY(-40%);
       }
       &:hover {
          text-decoration: underline;
