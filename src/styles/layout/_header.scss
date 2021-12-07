@@ -4,5 +4,10 @@
    @include m(pm) {
       outline: 2px solid black;
       padding-block: 2rem;
+
+      @include e(content) {
+         outline: 2px solid red;
+         position: relative;
+      }
    }
 }
