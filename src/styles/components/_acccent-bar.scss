@@ -15,7 +15,6 @@
          width: 180px;
          height: 5px;
          left: 0;
-         top: -80px;
          background-image: linear-gradient(
             to right,
             hsl(var(--clr-accent-orange)) 5%,
@@ -37,6 +36,14 @@
             hsl(var(--clr-accent-blue)) 40%
          );
          transition: opacity var(--btn-transition);
+      }
+   }
+
+   @include m(vertical) {
+      @include mq(max-width, tablet) {
+         @include p-el(before) {
+            top: -80px;
+         }
       }
    }
 }
