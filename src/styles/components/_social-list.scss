@@ -6,12 +6,9 @@
 
    @include e(item) {
       position: relative;
-
       @include p-el(before) {
          @include position(absolute);
-         transition: opacity 0.1s linear;
       }
-
       &:hover {
          @include p-el(before) {
             opacity: 0;
