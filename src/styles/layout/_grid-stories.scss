@@ -2,7 +2,10 @@
 
 .grid-container {
    @include m(stories) {
-      @include mq(min-width, tablet) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      @include mq(min-width, tablet-stories) {
          grid-template-columns: repeat(2, 1fr);
       }
    }
