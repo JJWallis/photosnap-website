@@ -11,16 +11,17 @@
    // background-position: center;
    background-size: cover;
 
-   // @include e(content) {
-   //    @include position(absolute) {
-   //       bottom: 0;
-   //    }
-   // }
+   @include e(content) {
+      @include position(absolute) {
+         bottom: 0;
+      }
+   }
 
    // IMAGES
 
    @include m(mountains) {
       @include bg-img('../assets/stories/mobile/mountains.jpg');
+      outline: 2px solid red;
    }
 
    @include m(cityspaces) {
