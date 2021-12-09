@@ -7,9 +7,29 @@
    }
 
    @include e(content) {
-      outline: 1px solid white;
-      @include position(absolute) {
-         bottom: 0;
+      position: relative;
+      // outline: 1px solid white;
+      pointer-events: none;
+      @include position(absolute, $width: 85%) {
+         bottom: 12%;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+   }
+
+   @include e(title) {
+      margin-bottom: 0.6rem;
+   }
+
+   @include e(subtitle) {
+      margin-bottom: 2rem;
+      @include p-el(after, $width: 100%, $height: 1px) {
+         background-color: hsl(var(--clr-pure-white) / 0.5);
+         @include position(absolute) {
+            bottom: 42px;
+            left: 0;
+            right: 0;
+         }
       }
    }
 
