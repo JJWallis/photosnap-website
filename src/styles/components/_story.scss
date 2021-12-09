@@ -11,12 +11,11 @@
    // background-position: center;
    background-size: cover;
 
-   @include e(content) {
-      outline: 1px solid red;
-      @include position(absolute) {
-         top: 0;
-      }
-   }
+   // @include e(content) {
+   //    @include position(absolute) {
+   //       bottom: 0;
+   //    }
+   // }
 
    // IMAGES
 
