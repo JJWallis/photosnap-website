@@ -11,6 +11,15 @@
    // background-position: center;
    background-size: cover;
 
+   @include e(content) {
+      outline: 1px solid red;
+      @include position(absolute) {
+         top: 0;
+      }
+   }
+
+   // IMAGES
+
    @include m(mountains) {
       @include bg-img('../assets/stories/mobile/mountains.jpg');
    }
@@ -21,5 +30,9 @@
 
    @include m(voage) {
       @include bg-img('../assets/stories/mobile/18-days-voyage.jpg');
+   }
+
+   @include m(architecturals) {
+      @include bg-img('../assets/stories/mobile/architecturals.jpg');
    }
 }
