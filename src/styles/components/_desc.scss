@@ -2,4 +2,11 @@
 
 .desc {
    // width: 95%;
+   @include m(hero) {
+      margin-bottom: 3.5rem;
+   }
+
+   @include m(offset) {
+      margin-bottom: 1.3rem;
+   }
 }
