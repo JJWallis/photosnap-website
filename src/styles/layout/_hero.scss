@@ -1,3 +1,7 @@
-.hero__content {
-   position: relative;
+@use 'abstracts' as *;
+
+.hero {
+   @include mq(max-width, tablet) {
+      position: relative;
+   }
 }

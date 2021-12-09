@@ -2,7 +2,7 @@
 
 .accent-bar {
    background-repeat: no-repeat;
-   @include p-el(before, $width: 5px, $height: 100%) {
+   @include p-el(before, $width: 5px, $height: 35%) {
       left: 0;
       background-image: linear-gradient(
          to top,
@@ -15,6 +15,7 @@
          width: 180px;
          height: 5px;
          left: 0;
+         top: -80px;
          background-image: linear-gradient(
             to right,
             hsl(var(--clr-accent-orange)) 5%,
