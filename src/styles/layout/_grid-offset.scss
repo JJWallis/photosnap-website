@@ -16,12 +16,7 @@
       }
 
       @include e(text) {
-         padding: var(--ct-padding);
-         & > :first-child {
-            width: 85%;
-            margin-inline: auto;
-            // outline: 3px solid red;
-         }
+         padding: var(--ct-padding-offset);
       }
    }
 }

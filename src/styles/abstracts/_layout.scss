@@ -5,10 +5,11 @@ $layout: (
       center: center,
       gap: 2rem,
       flow-space: 1.5rem,
-      ct-padding: 5rem 0,
+      ct-padding-offset: 5rem 0,
    ),
    tablet: (
       center-left-tablet: left,
+      ct-padding-offset: 7rem 0,
    ),
    desktop: (
       center-left-dekstop: left,
