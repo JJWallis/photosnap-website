@@ -7,32 +7,27 @@
       opacity: 1;
    }
 
-   background-repeat: no-repeat;
-   background-position: center 40%;
-   background-size: cover;
-
-   // @include e(content) {
-   //    @include position(absolute) {
-   //       bottom: 0;
-   //    }
+   // @include mq(max-width, desktop) {
+   //    background-repeat: no-repeat;
+   //    background-position: center;
+   //    background-size: cover;
    // }
 
    // IMAGES
 
-   @include m(mountains) {
-      @include bg-img('../assets/stories/desktop/mountains.jpg');
-      outline: 2px solid red;
-   }
+   // @include m(mountains) {
+   //    @include bg-img('../assets/stories/mobile/mountains.jpg');
+   // }
 
-   @include m(cityspaces) {
-      @include bg-img('../assets/stories/mobile/cityscapes.jpg');
-   }
+   // @include m(cityspaces) {
+   //    @include bg-img('../assets/stories/mobile/cityscapes.jpg');
+   // }
 
-   @include m(voage) {
-      @include bg-img('../assets/stories/mobile/18-days-voyage.jpg');
-   }
+   // @include m(voage) {
+   //    @include bg-img('../assets/stories/mobile/18-days-voyage.jpg');
+   // }
 
-   @include m(architecturals) {
-      @include bg-img('../assets/stories/mobile/architecturals.jpg');
-   }
+   // @include m(architecturals) {
+   //    @include bg-img('../assets/stories/mobile/architecturals.jpg');
+   // }
 }
