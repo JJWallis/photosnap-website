@@ -2,7 +2,7 @@
 
 .grid-container {
    @include m(offset) {
-      //   outline: 3px solid red;
+      // outline: 3px solid red;
       @include mq(max-width, tablet) {
          grid-template-areas:
             'picture'
@@ -21,11 +21,13 @@
 
       @include m(pm) {
          @include mq(min-width, tablet) {
+            grid-template-columns: 1fr auto;
          }
       }
 
       @include m(sd) {
          @include mq(min-width, tablet) {
+            grid-template-columns: auto 1fr;
          }
       }
    }

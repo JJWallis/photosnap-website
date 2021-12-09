@@ -7,9 +7,13 @@
 
    @include m(offset) {
       margin-bottom: 1.3rem;
+      @include mq(min-width, tablet) {
+         width: 90%;
+      }
    }
 
    @include m(feature) {
       width: 80%;
+      max-width: 450px;
    }
 }
