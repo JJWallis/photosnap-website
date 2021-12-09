@@ -3,6 +3,7 @@
 .grid-container {
    @include m(stories) {
       @include mq(min-width, tablet) {
+         grid-template-columns: repeat(2, 1fr);
       }
    }
 }
