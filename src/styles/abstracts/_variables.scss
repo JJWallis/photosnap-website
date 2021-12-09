@@ -7,6 +7,7 @@
    --ff-pm: 'DM Sans', sans-serif;
    --btn-transition: 0.2s linear;
    --nav-links-transition: 0.15s linear;
+   --mobile-nav-transition: 0.3s ease-in-out;
 
    @each $color, $value in $colors {
       --clr-#{$color}: #{$value};

@@ -2,7 +2,7 @@
 
 .features {
    padding: var(--ct-padding-features);
-   outline: 2px solid red;
+   // outline: 2px solid red;
 
    @include e(content) {
       gap: 11rem;

@@ -12,7 +12,7 @@
             top: 65px;
             left: 0;
          }
-         transition: opacity 0.3s ease-in-out;
+         transition: opacity var(--mobile-nav-transition);
       }
       &[data-visible='true'] {
          opacity: 1;
@@ -32,9 +32,27 @@
    }
 }
 
-body[data-visible='true'] {
+// body
+
+body {
    @include mq(max-width, tablet) {
-      overflow-y: hidden;
+      @include p-el(before) {
+         @include position(fixed, $z-index: 9996) {
+            pointer-events: none;
+            inset: 20% 0 0 0;
+            background-color: hsl(var(--clr-pure-black) / 0.6);
+            opacity: 0;
+            transition: opacity var(--mobile-nav-transition);
+         }
+      }
+
+      &[data-visible='true'] {
+         overflow-y: hidden;
+         @include p-el(before) {
+            opacity: 1;
+            pointer-events: all;
+         }
+      }
    }
 }
 
