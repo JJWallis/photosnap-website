@@ -1,14 +1,15 @@
 @use 'abstracts' as *;
 
 .story {
-   // display: grid;
-   // grid-template-columns: repeat(5, 1fr);
+   //   accent bar
    position: relative;
-   place-items: center;
-
    &:hover::before {
       opacity: 1;
    }
+
+   // grid
+
+   display: grid;
 
    // @include e(image) {
    //    grid-column: 1 / 3;
