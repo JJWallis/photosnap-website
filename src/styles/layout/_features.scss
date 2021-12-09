@@ -5,16 +5,17 @@
    outline: 2px solid red;
 
    @include e(content) {
+      gap: 11rem;
       @include m(home) {
-         outline: 2px solid red;
+         //  outline: 2px solid red;
          @include flexy($dir: column);
-         gap: 7rem;
          @include mq(min-width, desktop) {
             flex-direction: row;
          }
       }
 
       @include e(item) {
+         position: relative;
          @include flexy($dir: column, $align: center);
          gap: 1rem;
       }

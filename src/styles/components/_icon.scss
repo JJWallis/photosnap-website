@@ -1,0 +1,36 @@
+@use 'abstracts' as *;
+
+.icon {
+   @include m(feature) {
+      @include p-el(before) {
+         @include position(absolute) {
+            top: -120px;
+            left: 50%;
+            transform: translateX(-50%);
+         }
+      }
+   }
+
+   // imgs
+
+   @include m(responsive) {
+      @include p-el(
+         before,
+         $content: url('../assets/features/desktop/responsive.svg')
+      );
+   }
+
+   @include m(no-limit) {
+      @include p-el(
+         before,
+         $content: url('../assets/features/desktop/no-limit.svg')
+      );
+   }
+
+   @include m(embed) {
+      @include p-el(
+         before,
+         $content: url('../assets/features/desktop/embed.svg')
+      );
+   }
+}

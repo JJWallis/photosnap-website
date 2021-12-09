@@ -1,7 +1,6 @@
 @use 'abstracts' as *;
 
 .desc {
-   // width: 95%;
    @include m(hero) {
       margin-bottom: 3.5rem;
    }
@@ -11,6 +10,6 @@
    }
 
    @include m(feature) {
-      width: 90%;
+      width: 80%;
    }
 }
