@@ -1,0 +1,6 @@
+@use 'abstracts' as *;
+
+.features {
+   outline: 2px solid red;
+   padding: var(--ct-padding-features);
+}
