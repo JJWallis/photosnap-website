@@ -2,15 +2,19 @@
 
 .story {
    position: relative;
-   &:hover::before {
-      opacity: 1;
+   transition: transform var(--btn-transition);
+   &:hover {
+      transform: translateY(-7%);
+      @include p-el(before) {
+         opacity: 1;
+      }
    }
 
    @include m(shadow) {
       @include p-el(after) {
          @include position(absolute) {
             inset: 0;
-            background-color: hsl(var(--clr-pure-black) / 0.3);
+            background-color: hsl(var(--clr-pure-black) / 0.15);
             pointer-events: none;
          }
       }
@@ -18,10 +22,9 @@
 
    @include e(content) {
       position: relative;
-      // outline: 1px solid white;z
       pointer-events: none;
       @include position(absolute, $width: 85%, $z-index: 3) {
-         bottom: 12%;
+         bottom: 10%;
          left: 50%;
          transform: translateX(-50%);
       }
