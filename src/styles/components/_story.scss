@@ -6,11 +6,11 @@
       opacity: 1;
    }
 
-   display: grid;
-   grid-template-columns: repeat(1, 5fr);
-
    @include e(content) {
-      grid-colum: 1/ 4;
+      outline: 1px solid white;
+      @include position(absolute) {
+         bottom: 0;
+      }
    }
 
    // IMAGES
