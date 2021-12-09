@@ -9,4 +9,8 @@
    @include m(offset) {
       margin-bottom: 1.3rem;
    }
+
+   @include m(feature) {
+      width: 90%;
+   }
 }

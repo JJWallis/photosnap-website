@@ -1,6 +1,22 @@
 @use 'abstracts' as *;
 
 .features {
-   outline: 2px solid red;
    padding: var(--ct-padding-features);
+   outline: 2px solid red;
+
+   @include e(content) {
+      @include m(home) {
+         outline: 2px solid red;
+         @include flexy($dir: column);
+         gap: 7rem;
+         @include mq(min-width, desktop) {
+            flex-direction: row;
+         }
+      }
+
+      @include e(item) {
+         @include flexy($dir: column, $align: center);
+         gap: 1rem;
+      }
+   }
 }
