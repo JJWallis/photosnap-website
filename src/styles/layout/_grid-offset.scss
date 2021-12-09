@@ -1,0 +1,15 @@
+@use 'abstracts' as *;
+
+.grid-container {
+   @include m(offset) {
+      outline: 3px solid red;
+      @include mq(max-width, tablet) {
+      }
+
+      @include e(text) {
+      }
+
+      @include e(picture) {
+      }
+   }
+}
