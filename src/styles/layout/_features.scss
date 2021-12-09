@@ -5,7 +5,7 @@
    // outline: 2px solid red;
 
    @include e(content) {
-      gap: 11rem;
+      gap: 11.5rem;
       @include m(home) {
          //  outline: 2px solid red;
          @include flexy($dir: column);

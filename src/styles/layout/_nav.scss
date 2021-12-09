@@ -66,22 +66,23 @@ body {
          color: hsl(var(--clr-light-grey-btn));
       }
       @include mq(max-width, tablet) {
+         padding-block: 0.5rem;
          width: 100%;
       }
    }
 
-   @include m(pm) {
-      @include e(list) {
-         @include mq(min-width, tablet) {
-            @include flexy($dir: row);
-            gap: 1rem;
-         }
-         @include e(item) {
-         }
+   @include e(list) {
+      @include mq(min-width, tablet) {
+         @include flexy($dir: row);
+         gap: 2rem;
       }
+   }
 
-      & a {
-         padding-block: 0.5rem;
+   @include m(sd) {
+      @include e(list) {
+         & a:hover {
+            color: hsl(var(--clr-light-grey-btn) / 0.3);
+         }
       }
    }
 }

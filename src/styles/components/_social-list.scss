@@ -1,0 +1,6 @@
+@use 'abstracts' as *;
+
+.social-list {
+   @include flexy($just: center);
+   gap: 0.8rem;
+}

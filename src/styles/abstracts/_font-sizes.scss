@@ -18,6 +18,7 @@ $type-scale: (
       weight: (
          fw-bold: 700,
          fw-medium: 500,
+         fw-ftr-links: 500,
          fw-regular: 400,
       ),
       character-spacing: (
@@ -28,7 +29,9 @@ $type-scale: (
    tablet: (
       size: (),
       line-height: (),
-      weight: (),
+      weight: (
+         fw-ftr-links: 400,
+      ),
       character-spacing: (),
    ),
    desktop: (
