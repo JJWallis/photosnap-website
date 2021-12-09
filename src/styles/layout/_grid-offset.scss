@@ -10,9 +10,17 @@
          @include e(text) {
             grid-area: text;
          }
-
          @include e(picture) {
             grid-area: picture;
+         }
+      }
+
+      @include e(text) {
+         padding: var(--ct-padding);
+         & > :first-child {
+            width: 85%;
+            margin-inline: auto;
+            // outline: 3px solid red;
          }
       }
    }
