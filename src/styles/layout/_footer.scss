@@ -12,5 +12,17 @@
       display: grid;
       place-items: center;
       gap: 2rem;
+
+      @include e(nav) {
+         @include mq(max-width, tablet) {
+            margin-bottom: 4rem;
+         }
+      }
+
+      @include e(cta) {
+         @include mq(max-width, tablet) {
+            margin-left: -3rem;
+         }
+      }
    }
 }
