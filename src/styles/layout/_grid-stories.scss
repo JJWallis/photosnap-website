@@ -2,5 +2,10 @@
 
 .grid-container {
    @include m(stories) {
+      @include mq(max-width, tablet) {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-auto-rows: auto;
+      }
    }
 }
