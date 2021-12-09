@@ -2,14 +2,18 @@
 
 .grid-container {
    @include m(offset) {
-      outline: 3px solid red;
+      //   outline: 3px solid red;
       @include mq(max-width, tablet) {
-      }
+         grid-template-areas:
+            'picture'
+            'text';
+         @include e(text) {
+            grid-area: text;
+         }
 
-      @include e(text) {
-      }
-
-      @include e(picture) {
+         @include e(picture) {
+            grid-area: picture;
+         }
       }
    }
 }
