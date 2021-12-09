@@ -14,7 +14,7 @@
       @include mq(max-width, tablet) {
          width: 180px;
          height: 5px;
-         left: 30px;
+         left: 0;
          background-image: linear-gradient(
             to right,
             hsl(var(--clr-accent-orange)) 5%,
