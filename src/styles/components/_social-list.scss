@@ -3,4 +3,22 @@
 .social-list {
    @include flexy($just: center);
    gap: 0.8rem;
+
+   @include e(item) {
+      position: relative;
+      &:hover {
+         @include p-el(before) {
+            opacity: 1;
+         }
+      }
+
+      @include p-el(before) {
+         @include position(absolute) {
+            inset: 0;
+            background-color: red;
+            opacity: 0;
+            transition: opacity 0.3s linear;
+         }
+      }
+   }
 }
