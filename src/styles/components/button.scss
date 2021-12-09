@@ -45,8 +45,8 @@
          width: 100%;
          &::after {
             right: 0;
+            transform: translateY(-50%);
          }
-         //  reset content img to empty str?
       }
    }
 }

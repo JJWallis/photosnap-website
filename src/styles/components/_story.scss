@@ -8,7 +8,7 @@
 
    @include e(content) {
       position: relative;
-      // outline: 1px solid white;
+      // outline: 1px solid white;z
       pointer-events: none;
       @include position(absolute, $width: 85%) {
          bottom: 12%;
