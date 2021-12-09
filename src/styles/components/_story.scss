@@ -8,10 +8,18 @@
    }
 
    background-repeat: no-repeat;
-   background-position: center;
+   // background-position: center;
    background-size: cover;
 
    @include m(mountains) {
       @include bg-img('../assets/stories/mobile/mountains.jpg');
+   }
+
+   @include m(cityspaces) {
+      @include bg-img('../assets/stories/mobile/cityscapes.jpg');
+   }
+
+   @include m(voage) {
+      @include bg-img('../assets/stories/mobile/18-days-voyage.jpg');
    }
 }
