@@ -33,7 +33,9 @@
 }
 
 body[data-visible='true'] {
-   overflow-y: hidden;
+   @include mq(max-width, tablet) {
+      overflow-y: hidden;
+   }
 }
 
 .nav {
