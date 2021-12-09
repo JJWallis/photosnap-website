@@ -1,0 +1,7 @@
+@use 'abstracts' as *;
+
+.grid-container {
+   @include m(stories) {
+      outline: 3px solid red;
+   }
+}
