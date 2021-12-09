@@ -1,0 +1,16 @@
+@use 'abstracts' as *;
+
+.footer {
+   @include m(pm) {
+      padding: var(--ct-padding-footer);
+   }
+}
+
+.grid-container {
+   @include m(footer) {
+      outline: 1px solid red;
+      display: grid;
+      place-items: center;
+      gap: 2rem;
+   }
+}
