@@ -1,6 +1,7 @@
 $layout: (
    mobile: (
       center-left-tablet: center,
+      center-left-dekstop: center,
       center: center,
       gap: 2rem,
       flow-space: 1.5rem,
@@ -9,5 +10,7 @@ $layout: (
    tablet: (
       center-left-tablet: left,
    ),
-   desktop: (),
+   desktop: (
+      center-left-dekstop: left,
+   ),
 );

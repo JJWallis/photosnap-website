@@ -1,0 +1,7 @@
+@use 'abstracts' as *;
+
+.title {
+   @include m(pm) {
+      width: 90%;
+   }
+}
