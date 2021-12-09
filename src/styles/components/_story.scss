@@ -2,7 +2,16 @@
 
 .story {
    position: relative;
+
    &:hover::before {
       opacity: 1;
+   }
+
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+   @include m(mountains) {
+      @include bg-img('../assets/stories/mobile/mountains.jpg');
    }
 }

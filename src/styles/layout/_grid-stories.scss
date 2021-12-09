@@ -2,6 +2,10 @@
 
 .grid-container {
    @include m(stories) {
-      outline: 3px solid red;
+      display: grid;
+      @include mq(max-width, tablet) {
+         grid-template-columns: 1fr;
+         grid-auto-rows: minmax(400px, auto);
+      }
    }
 }
