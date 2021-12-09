@@ -1,10 +1,17 @@
 @use 'abstracts' as *;
 
 .story {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
    position: relative;
+   outline: 2px solid black;
 
    &:hover::before {
       opacity: 1;
+   }
+
+   @include e(image) {
+      grid-column: 1 / 3;
    }
 
    // @include mq(max-width, desktop) {
