@@ -18,5 +18,15 @@
       @include e(text) {
          padding: var(--ct-padding-offset);
       }
+
+      @include m(pm) {
+         @include mq(min-width, tablet) {
+         }
+      }
+
+      @include m(sd) {
+         @include mq(min-width, tablet) {
+         }
+      }
    }
 }
