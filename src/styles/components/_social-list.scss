@@ -3,6 +3,9 @@
 .social-list {
    @include flexy($just: center);
    gap: 0.8rem;
+   @include mq(min-width, tablet) {
+      @include flexy($just: flex-start);
+   }
 
    @include e(item) {
       position: relative;
