@@ -3,5 +3,6 @@
 .title {
    @include m(pm) {
       margin-bottom: 1.5rem;
+      max-width: 500px;
    }
 }
