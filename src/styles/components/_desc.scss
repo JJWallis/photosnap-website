@@ -3,7 +3,7 @@
 .desc {
    @include m(offset) {
       margin-bottom: 1.3rem;
-      max-width: 540px;
+      max-width: 520px;
       @include mq(min-width, tablet) {
          width: 90%;
          margin-bottom: 3rem;
