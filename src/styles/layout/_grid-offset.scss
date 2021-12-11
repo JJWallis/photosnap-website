@@ -19,9 +19,31 @@
          padding: var(--ct-padding-offset);
       }
 
+      @include e(picture) {
+         @include e(image) {
+            @include mq(min-width, desktop) {
+               opacity: 0;
+            }
+         }
+
+         @include m(hero) {
+            @include mq(min-width, desktop) {
+               @include bg-img(
+                  $img: '../assets/home/desktop/create-and-share.jpg',
+                  $position: 40% center,
+                  $size: cover
+               );
+            }
+         }
+      }
+
       @include m(pm) {
          @include mq(min-width, tablet) {
             grid-template-columns: 1fr auto;
+         }
+
+         @include mq(min-width, desktop) {
+            grid-template-columns: minmax(500px, 1fr) auto;
          }
       }
 
