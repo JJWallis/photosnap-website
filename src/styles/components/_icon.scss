@@ -24,7 +24,9 @@
       @include p-el(
          before,
          $content: url('../assets/features/desktop/no-limit.svg')
-      );
+      ) {
+         top: -100px;
+      }
    }
 
    @include m(embed) {

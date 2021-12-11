@@ -17,9 +17,11 @@
    }
 
    @include m(feature) {
-      @include mq(max-width, tablet) {
-         width: 80%;
-         max-width: 450px;
+      width: 80%;
+      max-width: 450px;
+      @include mq(min-width, desktop) {
+         width: 100%;
+         max-width: unset;
       }
    }
 }
