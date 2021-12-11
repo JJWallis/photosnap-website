@@ -31,6 +31,15 @@
             'social . copyright';
       }
 
+      @include mq(min-width, desktop) {
+         gap: 0 7rem;
+         grid-template-rows: auto 1fr auto;
+         grid-template-areas:
+            'logo nav cta'
+            '. nav .'
+            'social . copyright';
+      }
+
       @include e(logo) {
          grid-area: logo;
       }
@@ -43,6 +52,9 @@
          grid-area: nav;
          @include mq(max-width, tablet) {
             margin-bottom: 4rem;
+         }
+         @include mq(min-width, desktop) {
+            grid-row: 1 / -1;
          }
       }
 

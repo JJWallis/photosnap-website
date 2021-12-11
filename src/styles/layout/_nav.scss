@@ -83,6 +83,10 @@ body {
          & a:hover {
             color: hsl(var(--clr-light-grey-btn) / 0.3);
          }
+         @include mq(min-width, desktop) {
+            @include flexy($dir: column);
+            gap: 1rem;
+         }
       }
    }
 }
