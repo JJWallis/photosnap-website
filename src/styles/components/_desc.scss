@@ -20,7 +20,7 @@
       width: 80%;
       max-width: 450px;
       @include mq(min-width, desktop) {
-         width: 100%;
+         width: 90%;
          max-width: unset;
       }
    }
