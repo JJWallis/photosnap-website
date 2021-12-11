@@ -50,24 +50,27 @@
 
    background-size: 0;
    @include mqs(min-width, tablet-stories, max-width, desktop) {
+      @include e(image) {
+         opacity: 0;
+      }
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
    }
 
    @include m(mountains) {
-      @include bg-img('../assets/stories/mobile/mountains.jpg');
+      @include bg-img('../assets/stories/desktop/mountains.jpg');
    }
 
    // @include m(cityspaces) {
-   //    @include bg-img('../assets/stories/mobile/cityscapes.jpg');
+   //    @include bg-img('../assets/stories/desktop/cityscapes.jpg');
    // }
 
    // @include m(voage) {
-   //    @include bg-img('../assets/stories/mobile/18-days-voyage.jpg');
+   //    @include bg-img('../assets/stories/desktop/18-days-voyage.jpg');
    // }
 
    // @include m(architecturals) {
-   //    @include bg-img('../assets/stories/mobile/architecturals.jpg');
+   //    @include bg-img('../assets/stories/desktop/architecturals.jpg');
    // }
 }
