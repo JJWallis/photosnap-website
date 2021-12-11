@@ -65,15 +65,15 @@
       @include bg-img('../assets/stories/mobile/mountains.jpg');
    }
 
-   // @include m(cityspaces) {
-   //    @include bg-img('../assets/stories/desktop/cityscapes.jpg');
-   // }
+   @include m(cityspaces) {
+      @include bg-img('../assets/stories/mobile/cityscapes.jpg');
+   }
 
-   // @include m(voage) {
-   //    @include bg-img('../assets/stories/desktop/18-days-voyage.jpg');
-   // }
+   @include m(voage) {
+      @include bg-img('../assets/stories/mobile/18-days-voyage.jpg');
+   }
 
-   // @include m(architecturals) {
-   //    @include bg-img('../assets/stories/desktop/architecturals.jpg');
-   // }
+   @include m(architecturals) {
+      @include bg-img('../assets/stories/mobile/architecturals.jpg');
+   }
 }
