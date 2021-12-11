@@ -4,6 +4,8 @@
    @include m(pm) {
       margin-bottom: 1.5rem;
       max-width: 500px;
-      // @include mq(min-width, dektop-stories) {}
+      @include mq(min-width, desktop-offset) {
+         max-width: 450px;
+      }
    }
 }

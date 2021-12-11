@@ -19,7 +19,7 @@
       @include e(text) {
          padding: var(--ct-padding-offset);
          @include mq(min-width, desktop-offset) {
-            --ct-padding-offset: 10rem 2rem 8rem;
+            --ct-padding-offset: 10rem 3rem 8rem;
          }
       }
 
