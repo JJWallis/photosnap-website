@@ -1,14 +1,17 @@
 @use 'abstracts' as *;
 
 .desc {
-   @include m(hero) {
-      margin-bottom: 3.5rem;
-   }
-
    @include m(offset) {
       margin-bottom: 1.3rem;
       @include mq(min-width, tablet) {
          width: 90%;
+      }
+   }
+
+   @include m(hero) {
+      margin-bottom: 2rem;
+      @include mq(min-width, tablet) {
+         margin-bottom: 3rem;
       }
    }
 

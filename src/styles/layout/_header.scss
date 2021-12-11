@@ -3,6 +3,9 @@
 .header {
    @include m(pm) {
       padding-block: 2rem;
+      @include mq(min-width, tablet) {
+         padding-block: 1.3rem;
+      }
 
       @include e(content) {
          position: relative;

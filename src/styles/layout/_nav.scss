@@ -74,7 +74,7 @@ body {
    @include e(list) {
       @include mq(min-width, tablet) {
          @include flexy($dir: row);
-         gap: 1.3rem;
+         gap: 2.1rem;
       }
    }
 
