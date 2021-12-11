@@ -2,7 +2,8 @@
 
 .grid-container {
    @include m(offset) {
-      // outline: 3px solid red;
+      // mobile
+
       @include mq(max-width, tablet) {
          grid-template-areas:
             'picture'
@@ -18,6 +19,8 @@
       @include e(text) {
          padding: var(--ct-padding-offset);
       }
+
+      // wide
 
       @include e(picture) {
          @include e(image) {
@@ -36,6 +39,8 @@
             }
          }
       }
+
+      // general
 
       @include m(pm) {
          @include mq(min-width, tablet) {
