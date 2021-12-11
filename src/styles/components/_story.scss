@@ -48,15 +48,16 @@
 
    // IMAGES
 
-   // @include mq(max-width, desktop) {
-   //    background-repeat: no-repeat;
-   //    background-position: center;
-   //    background-size: cover;
-   // }
+   background-size: 0;
+   @include mqs(min-width, tablet-stories, max-width, desktop) {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
 
-   // @include m(mountains) {
-   //    @include bg-img('../assets/stories/mobile/mountains.jpg');
-   // }
+   @include m(mountains) {
+      @include bg-img('../assets/stories/mobile/mountains.jpg');
+   }
 
    // @include m(cityspaces) {
    //    @include bg-img('../assets/stories/mobile/cityscapes.jpg');
