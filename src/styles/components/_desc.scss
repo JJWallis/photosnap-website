@@ -5,13 +5,13 @@
       margin-bottom: 1.3rem;
       @include mq(min-width, tablet) {
          width: 90%;
+         margin-bottom: 3rem;
       }
    }
 
    @include m(hero) {
-      margin-bottom: 2rem;
-      @include mq(min-width, tablet) {
-         margin-bottom: 3rem;
+      @include mq(max-width, tablet) {
+         margin-bottom: 2rem;
       }
    }
 

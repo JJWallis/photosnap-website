@@ -2,6 +2,7 @@
 
 .story {
    position: relative;
+   cursor: pointer;
    transition: transform var(--btn-transition);
    &:hover {
       transform: translateY(-7%);
@@ -22,7 +23,6 @@
 
    @include e(content) {
       position: relative;
-      pointer-events: none;
       @include position(absolute, $width: 85%, $z-index: 3) {
          bottom: 10%;
          left: 50%;
@@ -54,7 +54,7 @@
 
    @include mq(min-width, tablet-stories) {
       @include e(image) {
-         display: none;
+         opacity: 0;
       }
       background-repeat: no-repeat;
       background-position: center;
