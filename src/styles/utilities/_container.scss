@@ -1,8 +1,12 @@
 @use 'abstracts' as *;
 
 .container-wrapper {
+   // outline: 2px solid lightgrey;
    width: 85%;
    max-width: 1000px;
    margin-inline: auto;
-   // outline: 2px solid lightgrey;
+
+   @include mq(min-width, tablet) {
+      width: 90%;
+   }
 }

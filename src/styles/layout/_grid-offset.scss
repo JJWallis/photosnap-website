@@ -17,6 +17,11 @@
 
       @include e(text) {
          padding: var(--ct-padding-offset);
+         & > section {
+            @include mq(min-width, tablet) {
+               width: 85%;
+            }
+         }
       }
 
       @include m(pm) {
