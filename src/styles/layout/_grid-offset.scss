@@ -18,22 +18,31 @@
 
       @include e(text) {
          padding: var(--ct-padding-offset);
+         @include mq(min-width, desktop-offset) {
+            --ct-padding-offset: 10rem 2rem 8rem;
+         }
       }
 
       // wide
 
       @include e(picture) {
-         @include e(image) {
-            @include mq(min-width, desktop-offset) {
+         @include mq(min-width, desktop-offset) {
+            @include e(image) {
                opacity: 0;
             }
-         }
 
-         @include m(hero) {
-            @include mq(min-width, desktop-offset) {
+            @include m(hero) {
                @include bg-img(
                   $img: '../assets/home/desktop/create-and-share.jpg',
-                  $position: 50% center,
+                  $position: center,
+                  $size: cover
+               );
+            }
+
+            @include m(everyone) {
+               @include bg-img(
+                  $img: '../assets/home/desktop/designed-for-everyone.jpg',
+                  $position: center,
                   $size: cover
                );
             }
