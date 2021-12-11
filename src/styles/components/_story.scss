@@ -48,10 +48,13 @@
 
    // IMAGES
 
-   background-size: 0;
-   @include mqs(min-width, tablet-stories, max-width, desktop) {
+   @include mq(max-width, tablet-stories) {
+      background-size: 0;
+   }
+
+   @include mq(min-width, tablet-stories) {
       @include e(image) {
-         opacity: 0;
+         display: none;
       }
       background-repeat: no-repeat;
       background-position: center;
@@ -59,7 +62,7 @@
    }
 
    @include m(mountains) {
-      @include bg-img('../assets/stories/desktop/mountains.jpg');
+      @include bg-img('../assets/stories/mobile/mountains.jpg');
    }
 
    // @include m(cityspaces) {
