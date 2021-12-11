@@ -8,12 +8,21 @@
 
 .grid-container {
    @include m(footer) {
-      // outline: 1px solid red;
-      display: grid;
+      outline: 1px solid red;
       place-items: center;
+      // grid-template-areas: ;
       gap: 2rem;
 
+      @include e(logo) {
+         // grid-area: logo;
+      }
+
+      @include e(social) {
+         // grid-area: social;
+      }
+
       @include e(nav) {
+         // grid-area: nav;
          @include mq(max-width, tablet) {
             margin-bottom: 4rem;
          }
@@ -23,6 +32,10 @@
          @include mq(max-width, tablet) {
             margin-left: -3rem;
          }
+      }
+
+      @include e(copyright) {
+         // grid-area: copyright;
       }
    }
 }
