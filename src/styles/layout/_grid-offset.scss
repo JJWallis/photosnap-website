@@ -39,6 +39,14 @@
                );
             }
 
+            @include m(beautiful) {
+               @include bg-img(
+                  $img: '../assets/home/desktop/beautiful-stories.jpg',
+                  $position: center,
+                  $size: cover
+               );
+            }
+
             @include m(everyone) {
                @include bg-img(
                   $img: '../assets/home/desktop/designed-for-everyone.jpg',
@@ -64,6 +72,10 @@
       @include m(sd) {
          @include mq(min-width, tablet) {
             grid-template-columns: auto 1fr;
+         }
+
+         @include mq(min-width, desktop-offset) {
+            grid-template-columns: auto minmax(500px, 1fr);
          }
       }
    }
