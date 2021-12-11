@@ -10,32 +10,38 @@
    @include m(footer) {
       outline: 1px solid red;
       place-items: center;
-      // grid-template-areas: ;
+      grid-template-areas:
+         'logo'
+         'social'
+         'nav'
+         'cta'
+         'copyright';
       gap: 2rem;
 
       @include e(logo) {
-         // grid-area: logo;
+         grid-area: logo;
       }
 
       @include e(social) {
-         // grid-area: social;
+         grid-area: social;
       }
 
       @include e(nav) {
-         // grid-area: nav;
+         grid-area: nav;
          @include mq(max-width, tablet) {
             margin-bottom: 4rem;
          }
       }
 
       @include e(cta) {
+         grid-area: cta;
          @include mq(max-width, tablet) {
             margin-left: -3rem;
          }
       }
 
       @include e(copyright) {
-         // grid-area: copyright;
+         grid-area: copyright;
       }
    }
 }
