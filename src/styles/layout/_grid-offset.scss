@@ -21,16 +21,16 @@
 
       @include e(picture) {
          @include e(image) {
-            @include mq(min-width, desktop) {
+            @include mq(min-width, desktop-offset) {
                opacity: 0;
             }
          }
 
          @include m(hero) {
-            @include mq(min-width, desktop) {
+            @include mq(min-width, desktop-offset) {
                @include bg-img(
                   $img: '../assets/home/desktop/create-and-share.jpg',
-                  $position: 40% center,
+                  $position: 50% center,
                   $size: cover
                );
             }
@@ -42,7 +42,7 @@
             grid-template-columns: 1fr auto;
          }
 
-         @include mq(min-width, desktop) {
+         @include mq(min-width, desktop-offset) {
             grid-template-columns: minmax(500px, 1fr) auto;
          }
       }
