@@ -42,7 +42,7 @@
             grid-template-columns: 1fr auto;
          }
 
-         @include mq(min-width, desktop-stories) {
+         @include mq(min-width, desktop) {
             grid-template-columns: minmax(500px, 1fr) auto;
          }
       }
