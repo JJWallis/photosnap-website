@@ -89,3 +89,5 @@ naked HSL colour format - alpha easily changeable
 accent bar - repsonsive height to hero content but relative to viewport
 
 Hamburger - creating manually with spans + pseudo els of parent button | translate lines to form a cross on click
+
+Social icons - gradient fill achieved by displaying that version on top of default as pseudo-el (opacity transitioned + switched on hover)
