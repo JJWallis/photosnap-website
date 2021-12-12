@@ -21,9 +21,12 @@ This is a solution to the [Photosnap multi-page website challenge](https://www.f
 
 Your users should be able to:
 
+-  View the optimal layout for each page depending on their device's screen size
+-  See hover states for all interactive elements throughout the site
+
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
@@ -38,8 +41,6 @@ Your users should be able to:
 -  Flexbox
 -  CSS Grid
 -  Mobile-first workflow
--  [React](https://reactjs.org/) - JS library
--  [Styled Components](https://styled-components.com/) - For styles
 -  Sass - CSS preprocessor
 
 ### What I learned
