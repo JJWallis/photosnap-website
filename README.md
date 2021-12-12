@@ -67,6 +67,8 @@ const proudOfThisFunc = () => {
 
 -  [Easily overlap content with CSS Grid](https://www.youtube.com/watch?v=HFG3BKOqOlE&ab_channel=KevinPowell) - Kevin's video for grid section in footer (overlapping nav + grid rows responding based on that)
 
+-  [Build and deploy your portfolio](https://scrimba.com/learn/portfolio) - Scrimba course with Kevin showcases custom animated harmburger
+
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
@@ -79,3 +81,11 @@ const proudOfThisFunc = () => {
 HTML:
 
 CSS:
+
+Sass partials - more organised (Kevin live stream) - utilities folder | maps broken up |
+
+naked HSL colour format - alpha easily changeable
+
+accent bar - repsonsive height to hero content but relative to viewport
+
+Hamburger - creating manually with spans + pseudo els of parent button | translate lines to form a cross on click
