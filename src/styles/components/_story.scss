@@ -79,4 +79,8 @@
    @include m(unforeseen) {
       @include bg-img('../assets/stories/desktop/unforeseen-corners.jpg');
    }
+
+   @include m(africa) {
+      @include bg-img('../assets/stories/desktop/king-on-africa.jpg');
+   }
 }
