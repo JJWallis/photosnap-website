@@ -111,4 +111,8 @@
    @include m(dark-forest) {
       @include bg-img('../assets/stories/desktop/dark-forest.jpg');
    }
+
+   @include m(somwarpet) {
+      @include bg-img('../assets/stories/desktop/somwarpet.jpg');
+   }
 }
