@@ -87,4 +87,8 @@
    @include m(africa) {
       @include bg-img('../assets/stories/desktop/king-on-africa.jpg');
    }
+
+   @include m(rage) {
+      @include bg-img('../assets/stories/desktop/rage-of-the-sea.jpg');
+   }
 }
