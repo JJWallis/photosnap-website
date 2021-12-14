@@ -32,6 +32,8 @@
          background-position: center;
          background-size: cover;
 
+         // refactor 2 blocks below
+
          @include m(hero) {
             @include m(stories) {
                @include bg-img(
@@ -43,6 +45,12 @@
                      $img: '../assets/stories/desktop/moon-of-appalacia.jpg'
                   );
                }
+            }
+         }
+
+         @include e(image) {
+            @include m(stories) {
+               opacity: 0;
             }
          }
 
@@ -92,6 +100,12 @@
 
          @include mq(min-width, desktop-offset) {
             grid-template-columns: auto minmax(500px, 1fr);
+         }
+      }
+
+      @include m(stories) {
+         @include mq(min-width, tablet) {
+            grid-template-columns: repeat(2, 1fr);
          }
       }
    }
