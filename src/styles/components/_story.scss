@@ -69,7 +69,7 @@
    }
 
    @include m(voage) {
-      @include bg-img('../assets/stories/mobile/18-days-voyage.jpg');
+      @include bg-img('../assets/stories/desktop/18-days-voyage.jpg');
    }
 
    @include m(architecturals) {
