@@ -8,6 +8,14 @@
    @include m(stories) {
       @include mq(min-width, tablet) {
          background-color: transparent;
+         position: relative;
+         grid-column: 1 / 2;
+         grid-row: 1 / 2;
+
+         @include m(bg) {
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+         }
       }
 
       @include e(subtitle) {

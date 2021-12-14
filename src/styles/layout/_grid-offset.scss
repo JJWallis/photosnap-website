@@ -51,6 +51,9 @@
          @include e(image) {
             @include m(stories) {
                opacity: 0;
+               @include mq(min-width, tablet) {
+                  display: none;
+               }
             }
          }
 
