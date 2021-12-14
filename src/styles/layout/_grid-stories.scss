@@ -4,7 +4,7 @@
    @include m(stories) {
       display: grid;
       grid-template-columns: 1fr;
-      grid-auto-rows: auto;
+      // changes at diff viewport to default tablet
       @include mq(min-width, tablet-stories) {
          grid-template-columns: repeat(2, 1fr);
          grid-auto-rows: minmax(550px, auto);

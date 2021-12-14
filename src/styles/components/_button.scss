@@ -3,9 +3,9 @@
 .btn {
    display: inline-block;
    @include m(bg) {
+      padding: 1em 2em;
       transition: background-color var(--btn-transition),
          color var(--btn-transition);
-      padding: 1em 2em;
 
       @include m(dark) {
          &:hover {

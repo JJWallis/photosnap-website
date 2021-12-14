@@ -5,9 +5,9 @@
 .nav-mobile {
    @include m(container) {
       @include mq(max-width, tablet) {
+         padding: 3rem 0 5.5rem;
          opacity: 0;
          pointer-events: none;
-         padding: 3rem 0 5.5rem;
          @include position(fixed, $z-index: 9997, $width: 100%) {
             top: 65px;
             left: 0;

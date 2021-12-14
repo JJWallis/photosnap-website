@@ -8,7 +8,6 @@
 
 .grid-container {
    @include m(footer) {
-      // outline: 1px solid red;
       grid-template-areas:
          'logo'
          'social'
