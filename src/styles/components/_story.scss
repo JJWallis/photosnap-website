@@ -107,4 +107,8 @@
    @include m(milky-way) {
       @include bg-img('../assets/stories/desktop/milky-way.jpg');
    }
+
+   @include m(dark-forest) {
+      @include bg-img('../assets/stories/desktop/dark-forest.jpg');
+   }
 }
