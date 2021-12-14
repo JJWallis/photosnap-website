@@ -4,4 +4,14 @@
    @include mq(max-width, tablet) {
       position: relative;
    }
+
+   @include e(subtitle) {
+      margin-bottom: 1rem;
+   }
+
+   @include e(credits) {
+      & > strong {
+         margin-left: 0.8rem;
+      }
+   }
 }
