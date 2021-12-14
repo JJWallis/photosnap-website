@@ -29,17 +29,34 @@
       // wide
 
       @include e(picture) {
+         background-position: center;
+         background-size: cover;
+
+         @include m(hero) {
+            @include m(stories) {
+               @include bg-img(
+                  $img: '../assets/stories/tablet/moon-of-appalacia.jpg'
+               );
+
+               @include mq(min-width, desktop-offset) {
+                  @include bg-img(
+                     $img: '../assets/stories/desktop/moon-of-appalacia.jpg'
+                  );
+               }
+            }
+         }
+
          @include mq(min-width, desktop-offset) {
             @include e(image) {
                opacity: 0;
             }
-            background-position: center;
-            background-size: cover;
 
             @include m(hero) {
-               @include bg-img(
-                  $img: '../assets/home/desktop/create-and-share.jpg'
-               );
+               @include m(home) {
+                  @include bg-img(
+                     $img: '../assets/home/desktop/create-and-share.jpg'
+                  );
+               }
             }
 
             @include m(beautiful) {
