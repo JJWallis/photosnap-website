@@ -2,9 +2,11 @@
 
 .accent-bar {
    background-repeat: no-repeat;
-   @include p-el(before, $width: 5px, $height: 300px) {
+   @include p-el(before, $width: 5px, $height: 50%) {
       @include position(absolute, $z-index: 2) {
          left: 0;
+         top: 50%;
+         transform: translateY(-50%);
       }
       background-image: linear-gradient(
          to top,

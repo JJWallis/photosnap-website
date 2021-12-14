@@ -19,6 +19,9 @@
       @include e(text) {
          padding: var(--ct-padding-offset);
          @include mq(min-width, desktop-offset) {
+            position: relative;
+         }
+         @include mq(min-width, desktop-offset) {
             --ct-padding-offset: 10rem 3rem 8rem;
          }
       }
@@ -30,28 +33,24 @@
             @include e(image) {
                opacity: 0;
             }
+            background-position: center;
+            background-size: cover;
 
             @include m(hero) {
                @include bg-img(
-                  $img: '../assets/home/desktop/create-and-share.jpg',
-                  $position: center,
-                  $size: cover
+                  $img: '../assets/home/desktop/create-and-share.jpg'
                );
             }
 
             @include m(beautiful) {
                @include bg-img(
-                  $img: '../assets/home/desktop/beautiful-stories.jpg',
-                  $position: center,
-                  $size: cover
+                  $img: '../assets/home/desktop/beautiful-stories.jpg'
                );
             }
 
             @include m(everyone) {
                @include bg-img(
-                  $img: '../assets/home/desktop/designed-for-everyone.jpg',
-                  $position: center,
-                  $size: cover
+                  $img: '../assets/home/desktop/designed-for-everyone.jpg'
                );
             }
          }
