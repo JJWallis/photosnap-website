@@ -17,6 +17,7 @@
       }
 
       @include m(page) {
+         // band aid - replace with negative margin on footer - gap under last item
          @include mq(min-width, tablet-stories) {
             grid-auto-rows: auto;
          }

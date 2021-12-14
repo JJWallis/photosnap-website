@@ -70,7 +70,13 @@
       @include bg-img('../assets/stories/mobile/architecturals.jpg');
    }
 
+   // stories
+
    @include m(word-tour) {
       @include bg-img('../assets/stories/desktop/world-tour.jpg');
+   }
+
+   @include m(unforeseen) {
+      @include bg-img('../assets/stories/desktop/unforeseen-corners.jpg');
    }
 }
