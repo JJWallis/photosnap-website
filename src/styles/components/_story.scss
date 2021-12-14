@@ -91,4 +91,8 @@
    @include m(rage) {
       @include bg-img('../assets/stories/desktop/rage-of-the-sea.jpg');
    }
+
+   @include m(running-free) {
+      @include bg-img('../assets/stories/desktop/running-free.jpg');
+   }
 }
