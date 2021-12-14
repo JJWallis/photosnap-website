@@ -80,6 +80,10 @@
       @include bg-img('../assets/stories/desktop/unforeseen-corners.jpg');
    }
 
+   @include m(nowhere) {
+      @include bg-img('../assets/stories/desktop/trip-to-nowhere.jpg');
+   }
+
    @include m(africa) {
       @include bg-img('../assets/stories/desktop/king-on-africa.jpg');
    }
