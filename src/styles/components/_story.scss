@@ -115,4 +115,8 @@
    @include m(somwarpet) {
       @include bg-img('../assets/stories/desktop/somwarpet.jpg');
    }
+
+   @include m(dreamland) {
+      @include bg-img('../assets/stories/desktop/land-of-dreams.jpg');
+   }
 }
