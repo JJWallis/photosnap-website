@@ -103,4 +103,8 @@
    @include m(calm-waters) {
       @include bg-img('../assets/stories/desktop/calm-waters.jpg');
    }
+
+   @include m(milky-way) {
+      @include bg-img('../assets/stories/desktop/milky-way.jpg');
+   }
 }
