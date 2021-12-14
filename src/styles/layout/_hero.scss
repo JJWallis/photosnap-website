@@ -5,13 +5,19 @@
       position: relative;
    }
 
-   @include e(subtitle) {
-      margin-bottom: 1rem;
-   }
+   @include m(stories) {
+      @include mq(min-width, tablet) {
+         background-color: transparent;
+      }
 
-   @include e(credits) {
-      & > strong {
-         margin-left: 0.8rem;
+      @include e(subtitle) {
+         margin-bottom: 1rem;
+      }
+
+      @include e(credits) {
+         & > strong {
+            margin-left: 0.8rem;
+         }
       }
    }
 }
