@@ -95,4 +95,8 @@
    @include m(running-free) {
       @include bg-img('../assets/stories/desktop/running-free.jpg');
    }
+
+   @include m(behind-waves) {
+      @include bg-img('../assets/stories/desktop/behind-the-waves.jpg');
+   }
 }
