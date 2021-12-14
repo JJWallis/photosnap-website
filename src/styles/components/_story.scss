@@ -69,4 +69,8 @@
    @include m(architecturals) {
       @include bg-img('../assets/stories/mobile/architecturals.jpg');
    }
+
+   @include m(word-tour) {
+      @include bg-img('../assets/stories/desktop/world-tour.jpg');
+   }
 }
