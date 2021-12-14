@@ -99,4 +99,8 @@
    @include m(behind-waves) {
       @include bg-img('../assets/stories/desktop/behind-the-waves.jpg');
    }
+
+   @include m(calm-waters) {
+      @include bg-img('../assets/stories/desktop/calm-waters.jpg');
+   }
 }
