@@ -17,7 +17,7 @@
       @include p-el(after) {
          @include position(absolute) {
             inset: 0;
-            background-color: hsl(var(--clr-pure-black) / 0.15);
+            background-color: hsl(var(--clr-pure-black) / 0.2);
             pointer-events: none;
          }
       }
@@ -33,7 +33,7 @@
    }
 
    @include e(title) {
-      margin-bottom: 0.4rem;
+      margin: 0.2rem 0 0.4rem;
    }
 
    @include e(subtitle) {
