@@ -18,7 +18,7 @@
       @include m(features) {
          @include mq(min-width, tablet) {
             grid-template-columns: repeat(2, 1fr);
-            gap: 11.5rem 5rem;
+            gap: 11.5rem 0rem;
          }
          @include mq(min-width, desktop) {
             grid-template-columns: repeat(3, 1fr);

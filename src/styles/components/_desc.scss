@@ -14,6 +14,11 @@
       @include mq(max-width, tablet) {
          margin-bottom: 2rem;
       }
+      @include m(feat) {
+         @include mq(max-width, tablet) {
+            max-width: 470px;
+         }
+      }
    }
 
    @include m(feature) {
