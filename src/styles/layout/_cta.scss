@@ -20,4 +20,16 @@
          grid-template-columns: repeat(2, 1fr);
       }
    }
+
+   @include e(title) {
+      margin-bottom: 0;
+   }
+
+   @include e(link) {
+      @include mq(min-width, tablet) {
+         align-self: center;
+         justify-self: end;
+         margin-right: 2rem;
+      }
+   }
 }
