@@ -3,12 +3,14 @@ const labelMonthly = document.querySelector('#label-monthly')
 const labelYearly = document.querySelector('#label-yearly')
 const amounts = document.querySelectorAll('.pricing-card__price__amount')
 const timeFrames = document.querySelectorAll('.pricing-card__price__timeframe')
-const classList = (el, action, classN) => {}
+const classList = (actionMonthly: string, actionYearly: string) => {
+   labelMonthly.classList[actionMonthly]('active')
+   labelYearly.classList[actionYearly]('active')
+}
 
 toggle.addEventListener('change', () => {
    if (toggle.checked) {
-      labelMonthly.classList.remove('active')
-      labelYearly.classList.add('active')
+      classList('remove', 'add')
 
       amounts.forEach((amount) => {
          const value = amount.textContent.split('')
@@ -20,8 +22,7 @@ toggle.addEventListener('change', () => {
       return
    }
 
-   labelMonthly.classList.add('active')
-   labelYearly.classList.remove('active')
+   classList('add', 'remove')
 
    amounts.forEach((amount) => {
       const value = amount.textContent.split('')
