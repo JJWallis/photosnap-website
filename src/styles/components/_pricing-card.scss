@@ -8,22 +8,44 @@
    }
 
    @include mqs(min-width, tablet, max-width, desktop) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+         'title . price'
+         'desc . price'
+         'btn . .';
    }
 
    @include m(pro) {
       position: relative;
    }
 
+   @include e(title) {
+      @include mqs(min-width, tablet, max-width, desktop) {
+         grid-area: title;
+      }
+   }
+
    @include e(desc) {
       width: 90%;
       max-width: 400px;
+      @include mqs(min-width, tablet, max-width, desktop) {
+         max-width: unset;
+         grid-area: desc;
+      }
    }
 
    @include e(price) {
       margin-block: 1.3rem;
+      @include mqs(min-width, tablet, max-width, desktop) {
+         grid-area: price;
+         margin-block: unset;
+      }
    }
 
    @include e(btn) {
       width: 75%;
+      @include mqs(min-width, tablet, max-width, desktop) {
+         grid-area: btn;
+      }
    }
 }
