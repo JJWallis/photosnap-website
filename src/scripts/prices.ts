@@ -18,6 +18,7 @@ function changeContent(idx: number, strAmount: string, strTime: string) {
    timeFrames.forEach((timeFrame) => (timeFrame.textContent = strTime))
 }
 
+toggle.checked = false
 toggle.addEventListener('change', () => {
    if (toggle.checked) {
       classList('remove', 'add')
