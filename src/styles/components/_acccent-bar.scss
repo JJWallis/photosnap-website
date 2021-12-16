@@ -41,6 +41,13 @@
          );
          transition: opacity var(--btn-transition);
       }
+
+      @include m(pricing) {
+         @include p-el(before, $width: 100%) {
+            opacity: 1;
+            top: 0;
+         }
+      }
    }
 
    @include m(vertical) {
