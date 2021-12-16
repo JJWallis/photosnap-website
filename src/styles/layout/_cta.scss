@@ -1,0 +1,23 @@
+@use 'abstracts' as *;
+
+.cta-beta {
+   outline: 1px solid red;
+   position: relative;
+   padding: var(--ct-padding-cta);
+   @include bg-img(
+      '../assets/shared/mobile/bg-beta.jpg',
+      $position: center,
+      $size: cover
+   );
+
+   @include mq(min-width, tablet) {
+      @include bg-img('../assets/shared/tablet/bg-beta.jpg');
+   }
+
+   @include e(content) {
+      gap: 2rem;
+      @include mq(min-width, tablet) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+}
