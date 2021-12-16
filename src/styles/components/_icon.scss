@@ -35,4 +35,11 @@
          $content: url('../assets/features/desktop/embed.svg')
       );
    }
+
+   @include m(domain) {
+      @include p-el(
+         before,
+         $content: url('../assets/features/desktop/custom-domain.svg')
+      );
+   }
 }
