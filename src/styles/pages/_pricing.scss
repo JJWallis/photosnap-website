@@ -9,6 +9,7 @@
    }
 
    @include e(grid-container) {
-      outline: 2px solid blue;
+      // outline: 2px solid blue;
+      gap: 1.5rem;
    }
 }

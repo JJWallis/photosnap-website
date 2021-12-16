@@ -1,5 +1,22 @@
 @use 'abstracts' as *;
 
 .pricing-card {
-   place-items: center;
+   padding: 3.5rem 0 2.8rem;
+   gap: 1.4rem;
+   @include mq(max-width, tablet) {
+      place-items: center;
+   }
+
+   @include e(desc) {
+      width: 90%;
+      max-width: 400px;
+   }
+
+   @include e(price) {
+      margin-block: 1.3rem;
+   }
+
+   @include e(btn) {
+      width: 75%;
+   }
 }
