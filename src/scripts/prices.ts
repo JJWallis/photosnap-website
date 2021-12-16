@@ -8,6 +8,16 @@ const classList = (actionMonthly: string, actionYearly: string) => {
    labelYearly.classList[actionYearly]('active')
 }
 
+function changeContent(idx: number, strAmount: string, strTime: string) {
+   amounts.forEach((amount) => {
+      const value = amount.textContent.split('')
+      value.splice(3, idx, strAmount)
+      amount.textContent = value.join('')
+   })
+
+   timeFrames.forEach((timeFrame) => (timeFrame.textContent = strTime))
+}
+
 toggle.addEventListener('change', () => {
    if (toggle.checked) {
       classList('remove', 'add')
