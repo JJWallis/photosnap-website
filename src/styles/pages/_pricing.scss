@@ -5,9 +5,10 @@
    @include e(toggle-container) {
       @include flexy($align: center, $just: center);
       gap: 2rem;
+      margin-bottom: 3.5rem;
    }
 
    @include e(grid-container) {
-      // outline: 2px solid blue;
+      outline: 2px solid blue;
    }
 }
