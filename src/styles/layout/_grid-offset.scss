@@ -68,6 +68,13 @@
                      $img: '../assets/home/desktop/create-and-share.jpg'
                   );
                }
+
+               @include m(features) {
+                  @include bg-img(
+                     $img: '../assets/features/desktop/hero.jpg',
+                     $position: 0%
+                  );
+               }
             }
 
             @include m(beautiful) {
