@@ -1,0 +1,6 @@
+@use 'abstracts' as *;
+
+.active {
+   font-weight: var(--fw-bold);
+   color: hsl(var(--clr-pure-black));
+}
