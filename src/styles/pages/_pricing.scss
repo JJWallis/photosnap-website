@@ -19,4 +19,42 @@
 
 .compare {
    padding-block: 7rem;
+   @include e(table) {
+      outline: 1px solid red;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: '';
+
+      @include e(header) {
+         grid-area: header;
+      }
+
+      @include e(title) {
+         @include m(basic) {
+            grid-area: basic;
+         }
+
+         @include m(pro) {
+            grid-area: pro;
+         }
+
+         @include m(business) {
+            grid-area: business;
+         }
+      }
+
+      @include e(unlimited) {
+         @include m(story) {
+            grid-area: unlimited-story;
+         }
+
+         @include m(photo) {
+            grid-area: unlimited-photo;
+         }
+      }
+
+      @include e(embed) {
+         grid-area: embed;
+      }
+   }
 }
