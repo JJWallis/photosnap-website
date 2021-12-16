@@ -15,7 +15,7 @@
    }
 
    @include e(content) {
-      gap: 2rem;
+      gap: 3rem;
       @include mq(min-width, tablet) {
          grid-template-columns: repeat(2, 1fr);
       }
@@ -29,7 +29,7 @@
       @include mq(min-width, tablet) {
          align-self: center;
          justify-self: end;
-         margin-right: 2rem;
+         margin-right: 4rem;
       }
    }
 }
