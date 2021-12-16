@@ -1,9 +1,9 @@
 @use 'abstracts' as *;
 
 .pricing-plans {
-   padding-top: 2rem;
+   padding-top: 5rem;
+   outline: 2px solid blue;
    @include e(toggle-container) {
-      // outline: 2px solid blue;
       @include flexy($align: center, $just: center);
       gap: 2rem;
    }
