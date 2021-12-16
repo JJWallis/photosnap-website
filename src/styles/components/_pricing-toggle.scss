@@ -13,7 +13,7 @@
          &:checked {
             & + .toggle--slider::before {
                background-color: hsl(var(--clr-pure-white));
-               transform: translate(110%, -50%);
+               transform: translate(123%, -50%);
             }
             & + .toggle--slider {
                background-color: hsl(var(--clr-pure-black));
@@ -31,7 +31,7 @@
          left: 0;
       }
       @include p-el(before) {
-         @include position(absolute, $width: 25px, $height: 25px) {
+         @include position(absolute, $width: 23px, $height: 23px) {
             top: 50%;
             transform: translateY(-50%);
             left: 4px;
