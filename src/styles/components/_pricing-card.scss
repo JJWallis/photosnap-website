@@ -6,31 +6,49 @@
    @include mq(max-width, tablet) {
       place-items: center;
    }
+   @include mq(min-width, desktop) {
+      place-items: center;
+   }
 
    @include mqs(min-width, tablet, max-width, desktop) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: auto 1fr auto;
       grid-template-areas:
          'title . price'
          'desc . price'
          'btn . .';
+      padding-inline: 2.5rem;
    }
 
    @include m(pro) {
       position: relative;
+      @include mq(min-width, desktop) {
+         transform: scale(1.1);
+      }
    }
 
    @include e(title) {
       @include mqs(min-width, tablet, max-width, desktop) {
          grid-area: title;
       }
+      @include mq(min-width, desktop) {
+         text-align: center;
+      }
    }
 
    @include e(desc) {
       width: 90%;
       max-width: 400px;
+      text-align: center;
+
       @include mqs(min-width, tablet, max-width, desktop) {
-         max-width: unset;
+         max-width: 350px;
          grid-area: desc;
+         margin-bottom: 0.8rem;
+         text-align: left;
+      }
+
+      @include mq(min-width, desktop) {
+         text-align: center;
       }
    }
 
@@ -44,8 +62,10 @@
 
    @include e(btn) {
       width: 75%;
+      max-width: 380px;
       @include mqs(min-width, tablet, max-width, desktop) {
          grid-area: btn;
+         max-width: 320px;
       }
    }
 }
