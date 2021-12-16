@@ -13,7 +13,129 @@
       <link rel="stylesheet" href="./styles/main.scss" />
       <script defer src="./scripts/nav.ts"></script>
    </head>
-   <body></body>
+
+   <body class="page--features text-light-grey-body" data-visible="false">
+      <a
+         href="#main-content"
+         class="
+            skip-to-content
+            btn btn--bg btn--bg--dark
+            text-pure-white
+            bg-pure-black
+            uppercase
+            fw-medium
+            fs-200
+            lh-200
+            cs-200
+         "
+         >Skip to content</a
+      >
+      <header class="header--pm">
+         <div class="header--pm__content container-wrapper">
+            <div>
+               <a href="./index.html" aria-label="Logo directing to homepage">
+                  <img
+                     src="./assets/shared/desktop/logo.svg"
+                     alt=""
+                     class="logo logo--pm"
+                  />
+               </a>
+            </div>
+            <button
+               id="btn-hamburger"
+               class="hamburger--btn"
+               aria-controls="primary-navigation"
+               aria-expanded="false"
+            >
+               <span class="hamburger" data-visible="false"></span>
+            </button>
+            <div
+               class="nav-mobile--container bg-pure-white"
+               data-visible="false"
+            >
+               <nav class="nav nav--pm" aria-label="Header navigation">
+                  <ul
+                     class="nav__list nav--pm__list"
+                     role="list"
+                     id="primary-navigation"
+                  >
+                     <li
+                        class="
+                           nav--pm__list__item
+                           uppercase
+                           cs-200
+                           fw-bold
+                           text-center-tablet
+                        "
+                     >
+                        <a href="./stories.html" class="text-pure-black"
+                           >Stories</a
+                        >
+                     </li>
+                     <li
+                        class="
+                           nav--pm__list__item
+                           uppercase
+                           cs-200
+                           fw-bold
+                           text-center-tablet
+                        "
+                     >
+                        <a href="./features.html" class="text-pure-black"
+                           >Features</a
+                        >
+                     </li>
+                     <li
+                        class="
+                           nav--pm__list__item
+                           uppercase
+                           cs-200
+                           fw-bold
+                           text-center-tablet
+                        "
+                     >
+                        <a href="./pricing.html" class="text-pure-black"
+                           >Pricing</a
+                        >
+                     </li>
+                  </ul>
+               </nav>
+               <hr class="nav-mobile--hr" />
+               <a
+                  href="#"
+                  class="
+                     header--pm__btn--mb
+                     text-center
+                     btn btn--bg btn--bg--dark
+                     text-pure-white
+                     bg-pure-black
+                     uppercase
+                     fw-regular
+                     lh-200
+                     cs-200
+                  "
+                  >Get an invite</a
+               >
+            </div>
+            <a
+               href="#"
+               class="
+                  header--pm__btn--wd
+                  btn btn--bg btn--bg--dark btn--wrap
+                  text-pure-white
+                  bg-pure-black
+                  uppercase
+                  fs-200
+                  lh-200
+                  cs-200
+               "
+               >Get an invite</a
+            >
+         </div>
+      </header>
+      <!-- / header -->
+      <main id="main-content" class="main"></main>
+   </body>
 </html>
 
 <!-- 
