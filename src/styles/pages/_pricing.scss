@@ -21,40 +21,46 @@
    padding-block: 7rem;
    @include e(table) {
       outline: 1px solid red;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: '';
+      // display: grid;
+      // grid-template-columns: repeat(3, 1fr);
+      // grid-template-areas:
+      //    'header basic pro'
+      //    'unlimited-story unlimited-story .';
 
-      @include e(header) {
-         grid-area: header;
-      }
+      // & > * {
+      //    outline: 1px solid black;
+      // }
 
-      @include e(title) {
-         @include m(basic) {
-            grid-area: basic;
-         }
+      // @include e(header) {
+      //    grid-area: header;
+      // }
 
-         @include m(pro) {
-            grid-area: pro;
-         }
+      // @include e(title) {
+      //    @include m(basic) {
+      //       grid-area: basic;
+      //    }
 
-         @include m(business) {
-            grid-area: business;
-         }
-      }
+      //    @include m(pro) {
+      //       grid-area: pro;
+      //    }
 
-      @include e(unlimited) {
-         @include m(story) {
-            grid-area: unlimited-story;
-         }
+      //    @include m(business) {
+      //       grid-area: business;
+      //    }
+      // }
 
-         @include m(photo) {
-            grid-area: unlimited-photo;
-         }
-      }
+      // @include e(unlimited) {
+      //    @include m(story) {
+      //       grid-area: unlimited-story;
+      //    }
 
-      @include e(embed) {
-         grid-area: embed;
-      }
+      //    @include m(photo) {
+      //       grid-area: unlimited-photo;
+      //    }
+      // }
+
+      // @include e(embed) {
+      //    grid-area: embed;
+      // }
    }
 }
