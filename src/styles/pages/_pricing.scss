@@ -2,9 +2,12 @@
 
 .pricing-plans {
    padding-top: 5rem;
-   outline: 2px solid blue;
    @include e(toggle-container) {
       @include flexy($align: center, $just: center);
       gap: 2rem;
+   }
+
+   @include e(grid-container) {
+      outline: 2px solid blue;
    }
 }

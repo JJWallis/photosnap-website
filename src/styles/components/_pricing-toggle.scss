@@ -24,7 +24,6 @@
 
    @include m(slider) {
       border-radius: 40px;
-      background-color: hsl(var(--clr-light-grey-btn));
       transition: background-color var(--mobile-nav-transition);
       @include position(absolute, $width: 60px, $height: 30px) {
          top: 0;
