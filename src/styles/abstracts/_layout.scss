@@ -2,6 +2,7 @@ $layout: (
    mobile: (
       center-left-tablet: center,
       center-left-dekstop: center,
+      center-pricing-card: center,
       center: center,
       gap: 2rem,
       flow-space: 1.5rem,
@@ -12,10 +13,12 @@ $layout: (
    ),
    tablet: (
       center-left-tablet: left,
+      center-pricing-card: left,
       ct-padding-offset: 10rem 2rem 5rem,
    ),
    desktop: (
       center-left-dekstop: left,
+      center-pricing-card: center,
       ct-padding-features: 15rem 0 9rem,
    ),
 );
