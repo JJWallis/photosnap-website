@@ -1,7 +1,6 @@
 @use 'abstracts' as *;
 
 .cta-beta {
-   outline: 1px solid red;
    position: relative;
    padding: var(--ct-padding-cta);
    @include bg-img(
@@ -14,15 +13,21 @@
       @include bg-img('../assets/shared/tablet/bg-beta.jpg');
    }
 
+   @include mq(min-width, desktop) {
+      @include bg-img('../assets/shared/desktop/bg-beta.jpg');
+   }
+
    @include e(content) {
       gap: 3rem;
       @include mq(min-width, tablet) {
+         gap: 0rem;
          grid-template-columns: repeat(2, 1fr);
       }
    }
 
    @include e(title) {
       margin-bottom: 0;
+      max-width: 400px;
    }
 
    @include e(link) {
