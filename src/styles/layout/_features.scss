@@ -22,7 +22,7 @@
          }
          @include mq(min-width, desktop) {
             grid-template-columns: repeat(3, 1fr);
-            gap: 11.5rem 0;
+            gap: 14rem 0;
          }
       }
 
