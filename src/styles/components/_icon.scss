@@ -49,4 +49,11 @@
          $content: url('../assets/features/desktop/boost-exposure.svg')
       );
    }
+
+   @include m(drag-drop) {
+      @include p-el(
+         before,
+         $content: url('../assets/features/desktop/drag-drop.svg')
+      );
+   }
 }
