@@ -42,4 +42,11 @@
          $content: url('../assets/features/desktop/custom-domain.svg')
       );
    }
+
+   @include m(exposure) {
+      @include p-el(
+         before,
+         $content: url('../assets/features/desktop/boost-exposure.svg')
+      );
+   }
 }
