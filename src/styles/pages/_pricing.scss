@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .pricing-plans {
-   padding-top: 5rem;
+   padding-top: 7rem;
    @include e(toggle-container) {
       @include flexy($align: center, $just: center);
       gap: 2rem;
@@ -15,4 +15,8 @@
          gap: 3rem;
       }
    }
+}
+
+.compare {
+   padding-block: 7rem;
 }
