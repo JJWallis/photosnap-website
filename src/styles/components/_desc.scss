@@ -24,8 +24,11 @@
    @include m(feature) {
       width: 80%;
       max-width: 450px;
+      @include mq(min-width, tablet) {
+         width: 100%;
+      }
       @include mq(min-width, desktop) {
-         width: 90%;
+         width: 100%;
          max-width: unset;
       }
    }
