@@ -25,7 +25,7 @@
    @include m(slider) {
       border-radius: 40px;
       background-color: hsl(var(--clr-light-grey-btn));
-      transition: background-color 0.3s ease-in-out;
+      transition: background-color var(--mobile-nav-transition);
       @include position(absolute, $width: 60px, $height: 30px) {
          top: 0;
          left: 0;
@@ -38,8 +38,8 @@
          }
          border-radius: 50%;
          background-color: hsl(var(--clr-pure-black));
-         transition: transform 0.3s ease-in-out,
-            background-color 0.3s ease-in-out;
+         transition: transform var(--mobile-nav-transition),
+            background-color var(--mobile-nav-transition);
       }
    }
 }
