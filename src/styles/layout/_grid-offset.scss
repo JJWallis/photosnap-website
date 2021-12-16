@@ -75,6 +75,10 @@
                      $position: 0%
                   );
                }
+
+               @include m(pricing) {
+                  @include bg-img($img: '../assets/pricing/desktop/hero.jpg');
+               }
             }
 
             @include m(beautiful) {
