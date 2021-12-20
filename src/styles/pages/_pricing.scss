@@ -17,6 +17,8 @@
    }
 }
 
+// table
+
 .compare {
    padding-block: 7rem;
    @include e(table) {
@@ -59,7 +61,7 @@
          @include mq(max-width, tablet) {
             padding: 1.5rem 0;
          }
-         padding: 1rem;
+         padding: 1.5rem 2.5rem;
       }
 
       @include e(body) {
