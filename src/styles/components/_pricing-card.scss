@@ -43,6 +43,9 @@
          grid-area: desc;
          margin-bottom: 0.8rem;
       }
+      @include mq(min-width, desktop) {
+         max-width: 280px;
+      }
    }
 
    @include e(price) {
