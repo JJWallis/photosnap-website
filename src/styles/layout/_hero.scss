@@ -10,6 +10,9 @@
    @include mq(max-width, tablet) {
       margin-inline: auto;
    }
+   @include mq(min-width, ultra-wide) {
+      padding-left: clamp(6rem, 6vw, 10rem);
+   }
 
    @include m(stories) {
       @include mq(min-width, tablet) {
