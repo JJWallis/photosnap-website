@@ -42,10 +42,10 @@
          padding: 1rem;
       }
 
-      // @include e(body) {
-      //    @include m(row) {
-      //       // border: 10px solid red;
-      //    }
-      // }
+      @include e(body) {
+         & tr {
+            border-bottom: 1px solid hsl(var(--clr-light-grey-body));
+         }
+      }
    }
 }
