@@ -20,9 +20,9 @@
          padding: var(--ct-padding-offset);
          @include mq(min-width, desktop-offset) {
             position: relative;
-         }
-         @include mq(min-width, desktop-offset) {
             --ct-padding-offset: 10rem 0 8rem;
+         }
+         @include mq(min-width, tablet) {
             @include m(non-accent) {
                --ct-padding-offset: 10rem 3rem 8rem;
             }
@@ -34,8 +34,6 @@
       @include e(picture) {
          background-position: center;
          background-size: cover;
-
-         // refactor 2 blocks below
 
          @include m(hero) {
             @include m(stories) {
