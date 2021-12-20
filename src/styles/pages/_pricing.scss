@@ -23,52 +23,47 @@
       outline: 2px solid black;
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-areas:
-         'header basic pro'
-         'unlimited-story unlimited-story .';
-
       // & > * {
       //    // outline: 1px solid black;
       // }
-
-      @include e(header) {
-         grid-area: header;
-      }
-
-      @include e(features) {
-         grid-area: features;
-      }
-
-      // @include e(title) {
-      @include e(basic) {
-         grid-area: basic;
-      }
-
-      @include e(pro) {
-         grid-area: pro;
-      }
-
-      @include e(business) {
-         grid-area: business;
-      }
+      // @include e(header) {
+      //    grid-area: header;
       // }
 
-      @include e(unlimited) {
-         @include m(story) {
-            grid-area: unlimited-story;
-         }
-         // @include m(photo) {
-         //    grid-area: unlimited-photo;
-         // }
-      }
-
-      // @include e(embed) {
-      //    grid-area: embed;
+      // @include e(features) {
+      //    grid-area: features;
       // }
 
-      @include e(tick) {
-         grid-area: tick;
-      }
+      // // @include e(title) {
+      // @include e(basic) {
+      //    grid-area: basic;
+      // }
+
+      // @include e(pro) {
+      //    grid-area: pro;
+      // }
+
+      // @include e(business) {
+      //    grid-area: business;
+      // }
+      // // }
+
+      // @include e(unlimited) {
+      //    @include m(story) {
+      //       grid-area: unlimited-story;
+      //    }
+      //    // @include m(photo) {
+      //    //    grid-area: unlimited-photo;
+      //    // }
+      // }
+
+      // // @include e(embed) {
+      // //    grid-area: embed;
+      // // }
+
+      // @include e(tick) {
+      //    grid-area: tick;
+      // }
 
       @include e(body) {
          @include m(row) {
