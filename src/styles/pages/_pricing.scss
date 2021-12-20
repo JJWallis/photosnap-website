@@ -43,6 +43,13 @@
                left: -9999px;
             }
          }
+
+         .compare__table__body--row {
+            & > *:not(:first-child) {
+               display: inline-block;
+               margin-right: 20%;
+            }
+         }
       }
 
       & th,
