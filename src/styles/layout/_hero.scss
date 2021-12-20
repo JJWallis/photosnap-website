@@ -1,7 +1,7 @@
 @use 'abstracts' as *;
 
 .hero {
-   outline: 1px solid red;
+   // outline: 1px solid red;
    position: relative;
    width: 85%;
    @include mq(min-width, tablet) {
