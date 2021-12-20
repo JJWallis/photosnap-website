@@ -1,8 +1,18 @@
 @use 'abstracts' as *;
 
 .hero {
+   position: relative;
+   // container wrapper classes - turn off margin-inline from tablet (auto before)
+   width: 85%;
+
+   @include mq(min-width, tablet) {
+      width: 90%;
+      padding-inline: min(4rem, 10vw);
+      // add to utility variable
+   }
+
    @include mq(max-width, tablet) {
-      position: relative;
+      margin-inline: auto;
    }
 
    @include m(stories) {
