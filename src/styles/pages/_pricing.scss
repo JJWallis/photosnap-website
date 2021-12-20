@@ -66,11 +66,10 @@
          & tr {
             border-bottom: 1px solid hsl(var(--clr-light-grey-body) / 0.2);
          }
-         @include m(row) {
-            &:first-child {
-               text-transform: uppercase;
-               letter-spacing: 2px;
-            }
+         @include e(title) {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: hsl(var(--clr-pure-black));
          }
       }
 
@@ -92,7 +91,7 @@
             @include p-el(before, $content: 'basic') {
                display: block;
                position: absolute;
-               top: -9px;
+               top: 0;
                color: hsl(var(--clr-light-grey-body) / 0.7);
                @include uc();
                font-size: 0.7rem;
