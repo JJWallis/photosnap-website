@@ -20,7 +20,7 @@
 .compare {
    padding-block: 7rem;
    @include e(table) {
-      outline: 1px solid red;
+      outline: 2px solid black;
       // display: grid;
       // grid-template-columns: repeat(3, 1fr);
       // grid-template-areas:

@@ -383,29 +383,25 @@
             >
                Compare
             </h2>
-            <div class="compare__table" role="grid">
-               <div class="compare__table__header">
-                  <p>The features</p>
-               </div>
-               <div class="compare__table__title--basic" role="gridcell">
-                  <p>Basic</p>
-               </div>
-               <div class="compare__table__title--pro" role="gridcell">
-                  <p>Pro</p>
-               </div>
-               <div class="compare__table__title--business" role="gridcell">
-                  <p>Business</p>
-               </div>
-               <div class="compare__table__unlimited--story" role="gridcell">
-                  <p>Unlimited story posting</p>
-               </div>
-               <div class="compare__table__unlimited--photo" role="gridcell">
-                  <p>Unlimited photo upload</p>
-               </div>
-               <div class="compare__table__embed" role="gridcell">
-                  <p>Embedding Custom content</p>
-               </div>
-            </div>
+
+            <table class="compare__table" role="grid">
+               <caption class="sr-only">
+                  Compare pricing features
+               </caption>
+               <thead class="compare__table__header">
+                  <tr>
+                     <th scope="row" colspan="3">The Features</th>
+                  </tr>
+               </thead>
+               <tbody class="compare__table__body">
+                  <tr class="compare__table__body--row">
+                     <th>Unlimited Story Posting</th>
+                     <td>Basic</td>
+                     <td>Pro</td>
+                     <td>Business</td>
+                  </tr>
+               </tbody>
+            </table>
          </section>
          <!-- / compare -->
 
