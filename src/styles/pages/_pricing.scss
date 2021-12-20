@@ -26,6 +26,25 @@
       min-width: 400px;
       max-width: 800px;
 
+      @include mq(max-width, tablet) {
+         table,
+         thead,
+         tbody,
+         th,
+         td,
+         tr {
+            display: block;
+         }
+
+         .compare__table__header--heading {
+            @include mq(max-width, tablet) {
+               position: absolute;
+               top: -9999px;
+               left: -9999px;
+            }
+         }
+      }
+
       & th,
       & td {
          padding: 1rem;
@@ -44,23 +63,20 @@
             font-weight: bold;
             color: hsl(var(--clr-pure-black));
          }
-
-         @include m(heading) {
-            @include mq(max-width, tablet) {
-               display: none;
-            }
-         }
       }
 
       @include e(tick) {
-         outline: 1px solid red;
+         // outline: 1px solid red;
          @include mq(max-width, tablet) {
             position: relative;
             @include p-el(before) {
                content: 'basic';
                display: block;
                position: absolute;
-               top: 5px;
+               top: 0;
+               color: hsl(var(--clr-light-grey-body) / 0.7);
+               @include uc();
+               font-size: 0.7rem;
             }
          }
       }
