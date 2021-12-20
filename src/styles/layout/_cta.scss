@@ -2,7 +2,7 @@
 
 .cta-beta {
    display: grid;
-   grid-template-rows: minmax(316px, 1fr);
+   grid-template-rows: minmax(200px, 1fr);
    position: relative;
    padding: var(--ct-padding-cta);
    @include bg-img(
