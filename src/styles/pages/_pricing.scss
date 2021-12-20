@@ -49,13 +49,16 @@
          .compare__table__body--row {
             & > *:not(:first-child) {
                display: inline-block;
-               margin-right: 15%;
+               margin-right: min(10rem, 23vw);
             }
          }
       }
 
       & th,
       & td {
+         @include mq(max-width, tablet) {
+            padding: 1.5rem 0;
+         }
          padding: 1rem;
       }
 
