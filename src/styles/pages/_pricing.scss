@@ -20,22 +20,11 @@
 .compare {
    padding-block: 7rem;
    @include e(table) {
-      // outline: 2px solid black;
-      display: grid;
-      grid-template-columns: 1fr;
       border-collapse: collapse;
       margin-top: 3rem;
       font-size: 0.9rem;
       min-width: 400px;
-
-      @include e(header) {
-         border-bottom: 1px solid hsl(var(--clr-pure-black));
-         & tr {
-            text-align: left;
-            // border: 1px solid red;
-            font-weight: bold;
-         }
-      }
+      max-width: 800px;
 
       & th,
       & td {
@@ -44,7 +33,35 @@
 
       @include e(body) {
          & tr {
-            border-bottom: 1px solid hsl(var(--clr-light-grey-body));
+            border-bottom: 1px solid hsl(var(--clr-light-grey-body) / 0.2);
+         }
+      }
+
+      @include e(header) {
+         border-bottom: 1px solid hsl(var(--clr-pure-black));
+         & tr {
+            text-align: left;
+            font-weight: bold;
+            color: hsl(var(--clr-pure-black));
+         }
+
+         @include m(heading) {
+            @include mq(max-width, tablet) {
+               display: none;
+            }
+         }
+      }
+
+      @include e(tick) {
+         outline: 1px solid red;
+         @include mq(max-width, tablet) {
+            position: relative;
+            @include p-el(before) {
+               content: 'basic';
+               display: block;
+               position: absolute;
+               top: 5px;
+            }
          }
       }
    }
