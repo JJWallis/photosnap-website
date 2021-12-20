@@ -1,6 +1,8 @@
 @use 'abstracts' as *;
 
 .cta-beta {
+   display: grid;
+   grid-template-rows: minmax(316px, 1fr);
    position: relative;
    padding: var(--ct-padding-cta);
    @include bg-img(
@@ -26,6 +28,12 @@
    }
 
    @include e(title) {
+      @include m(ct) {
+         @include mq(min-width, tablet) {
+            @include flexy($dir: column, $just: center);
+         }
+      }
+
       margin-bottom: 0;
       max-width: 400px;
    }

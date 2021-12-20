@@ -57,5 +57,18 @@
             top: -80px;
          }
       }
+      @include m(cta) {
+         @include mq(max-width, tablet) {
+            @include p-el(before) {
+               top: 0px;
+               left: 8%;
+            }
+            @include mq(min-width, tablet) {
+               @include p-el(before) {
+                  top: -30px;
+               }
+            }
+         }
+      }
    }
 }
