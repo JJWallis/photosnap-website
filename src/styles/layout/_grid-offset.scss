@@ -22,7 +22,7 @@
             position: relative;
          }
          @include mq(min-width, desktop-offset) {
-            // --ct-padding-offset: 10rem 3rem 8rem;
+            --ct-padding-offset: 10rem 0 8rem;
          }
       }
 
