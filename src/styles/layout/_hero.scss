@@ -1,16 +1,13 @@
 @use 'abstracts' as *;
 
 .hero {
+   outline: 1px solid red;
    position: relative;
-   // container wrapper classes - turn off margin-inline from tablet (auto before)
    width: 85%;
-
    @include mq(min-width, tablet) {
       width: 90%;
-      padding-inline: min(4rem, 10vw);
-      // add to utility variable
+      padding-left: clamp(2rem, 6vw, 5rem);
    }
-
    @include mq(max-width, tablet) {
       margin-inline: auto;
    }
