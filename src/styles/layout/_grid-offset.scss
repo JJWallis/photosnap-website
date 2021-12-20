@@ -106,6 +106,9 @@
          @include mq(min-width, desktop-offset) {
             grid-template-columns: minmax(500px, 1fr) auto;
          }
+         @include mq(min-width, ultra-wide) {
+            grid-template-columns: repeat(2, 1fr);
+         }
       }
 
       @include m(sd) {
@@ -115,6 +118,10 @@
 
          @include mq(min-width, desktop-offset) {
             grid-template-columns: auto minmax(500px, 1fr);
+         }
+
+         @include mq(min-width, ultra-wide) {
+            grid-template-columns: repeat(2, 1fr);
          }
       }
 
