@@ -20,55 +20,32 @@
 .compare {
    padding-block: 7rem;
    @include e(table) {
-      outline: 2px solid black;
+      // outline: 2px solid black;
       display: grid;
       grid-template-columns: 1fr;
-      // & > * {
-      //    // outline: 1px solid black;
-      // }
-      // @include e(header) {
-      //    grid-area: header;
-      // }
+      border-collapse: collapse;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      min-width: 400px;
 
-      // @include e(features) {
-      //    grid-area: features;
-      // }
-
-      // // @include e(title) {
-      // @include e(basic) {
-      //    grid-area: basic;
-      // }
-
-      // @include e(pro) {
-      //    grid-area: pro;
-      // }
-
-      // @include e(business) {
-      //    grid-area: business;
-      // }
-      // // }
-
-      // @include e(unlimited) {
-      //    @include m(story) {
-      //       grid-area: unlimited-story;
-      //    }
-      //    // @include m(photo) {
-      //    //    grid-area: unlimited-photo;
-      //    // }
-      // }
-
-      // // @include e(embed) {
-      // //    grid-area: embed;
-      // // }
-
-      // @include e(tick) {
-      //    grid-area: tick;
-      // }
-
-      @include e(body) {
-         @include m(row) {
-            border: 10px solid red;
+      @include e(header) {
+         border-bottom: 1px solid hsl(var(--clr-pure-black));
+         & tr {
+            text-align: left;
+            // border: 1px solid red;
+            font-weight: bold;
          }
       }
+
+      & th,
+      & td {
+         padding: 1rem;
+      }
+
+      // @include e(body) {
+      //    @include m(row) {
+      //       // border: 10px solid red;
+      //    }
+      // }
    }
 }
