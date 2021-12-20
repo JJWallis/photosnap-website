@@ -86,14 +86,19 @@
          // outline: 1px solid red;
          @include mq(max-width, tablet) {
             position: relative;
-            @include p-el(before) {
-               content: 'basic';
+            @include p-el(before, $content: 'basic') {
                display: block;
                position: absolute;
-               top: 0;
+               top: -9px;
                color: hsl(var(--clr-light-grey-body) / 0.7);
                @include uc();
                font-size: 0.7rem;
+            }
+            @include m(pro) {
+               @include p-el(before, $content: 'pro');
+            }
+            @include m(business) {
+               @include p-el(before, $content: 'business');
             }
          }
       }
