@@ -2,7 +2,7 @@
 
 .accent-bar {
    background-repeat: no-repeat;
-   @include p-el(before, $width: 5px, $height: 50%) {
+   @include p-el(before, $width: 5px, $height: 100%) {
       @include position(absolute, $z-index: 2) {
          left: 0;
       }
