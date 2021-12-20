@@ -80,6 +80,9 @@ body {
 
    @include m(sd) {
       @include e(list) {
+         & a {
+            transition: none;
+         }
          & a:hover {
             color: hsl(var(--clr-light-grey-btn) / 0.3);
          }
