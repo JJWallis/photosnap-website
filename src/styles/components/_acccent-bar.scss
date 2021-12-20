@@ -43,9 +43,21 @@
       }
 
       @include m(pricing) {
-         @include p-el(before, $width: 100%) {
-            opacity: 1;
+         @include p-el(before, $width: 100%, $height: 5px) {
             top: 0;
+         }
+
+         @include mq(min-width, tablet) {
+            @include p-el(before, $width: 100%, $height: 5px) {
+               opacity: 1;
+               top: 0;
+               background-image: linear-gradient(
+                  to right,
+                  hsl(var(--clr-accent-orange)) 5%,
+                  hsl(var(--clr-accent-pink)) 15%,
+                  hsl(var(--clr-accent-blue)) 40%
+               );
+            }
          }
       }
    }
