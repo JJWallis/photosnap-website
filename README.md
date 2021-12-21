@@ -148,11 +148,8 @@ I was really proud of my solution to creating the primary 'offset' design of the
 .hero {
    @include m(stories) {
       @include mq(min-width, tablet) {
-         background-color: transparent;
-         position: relative;
          grid-column: 1 / 2;
          grid-row: 1 / 2;
-
          @include m(bg) {
             grid-column: 1 / -1;
             grid-row: 1 / 2;
@@ -162,7 +159,7 @@ I was really proud of my solution to creating the primary 'offset' design of the
 }
 ```
 
-Overlapping content with grid (referenced kevins vid below)
+The last feature I was proud of was using grid to overlap content instead of turning to positioning by default. This is something you have to explicitly tell grid to allow since by default it assumes you never want that to happen, but it provides a much more coherent syntax as it's all controlled from the parent container itself.
 
 ### Continued development
 
