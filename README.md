@@ -200,11 +200,15 @@ Social icons - gradient fill achieved by displaying that version on top of defau
 
 Sass partials - more organised (Kevin live stream) - utilities folder + additional abstract partials (maps broken up)
 
+Grid layout - overlapping practice (using positioning less) | not turning to flex immediately (centering content + align-self - don't have with flex)
+
 ### Useful resources
 
 -  [Easily overlap content with CSS Grid](https://www.youtube.com/watch?v=HFG3BKOqOlE&ab_channel=KevinPowell) - Kevin's video for grid section in footer (overlapping nav + grid rows responding based on that)
 
 -  [Build and deploy your portfolio](https://scrimba.com/learn/portfolio) - Scrimba course with Kevin showcases custom animated harmburger
+
+-  [Responsive Data Tables](https://css-tricks.com/responsive-data-tables/) - CSS tricks article | multiple responsive techniques with tables - this one used in the design (with a few additions - tick cells next to each-other) | display block for mobile means normal properties start working for these els
 
 ## Author
 
