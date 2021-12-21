@@ -125,32 +125,24 @@ This was my first attempt at 'manually' creating a hamburger made up of multiple
 .grid-container {
    @include m(offset) {
       @include m(pm) {
-         @include mq(min-width, tablet) {
-            grid-template-columns: 1fr auto;
-         }
          @include mq(min-width, desktop-offset) {
-            grid-template-columns: minmax(500px, 1fr) auto;
-         }
-         @include mq(min-width, ultra-wide) {
-            grid-template-columns: repeat(2, 1fr);
-         }
-      }
-
-      @include mq(min-width, desktop-offset) {
-         @include e(image) {
-            opacity: 0;
-         }
-         @include m(hero) {
-            @include m(home) {
-               @include bg-img(
-                  $img: '../assets/home/desktop/create-and-share.jpg'
-               );
+            @include e(image) {
+               opacity: 0;
+            }
+            @include m(hero) {
+               @include m(home) {
+                  @include bg-img(
+                     $img: '../assets/home/desktop/create-and-share.jpg'
+                  );
+               }
             }
          }
       }
    }
 }
 ```
+
+I was really proud of my solution to creating the primary 'offset' design of the hero sections on all pages.
 
 Grid offset design - switching fluid imgs + background-imgs (cover space where padding on text items causes fluid grid rows to expand) | changing position to keep focus point of img in view (diff for each pic)
 
