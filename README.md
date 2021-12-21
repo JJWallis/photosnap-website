@@ -68,6 +68,31 @@ Your users should be able to:
 Table - first time building + styling tables in a project | accessible - caption even though not visible in design, headers + scope attrs, description of whether feature available (only tick SVG - wouldn't make sense to include in alt)
 
 ```scss
+.compare__table {
+   @include mq(max-width, tablet) {
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+         display: block;
+      }
+
+      .compare__table__header--heading {
+         @include mq(max-width, tablet) {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+         }
+      }
+   }
+}
+```
+
+Table styling - padding vs margin, no width behaviour, left aligned vs centered | mobile - display block (inline-block for tick cells) + logical min() padding so grew but stopped eventually, pseudo-el for labels (main ones disappear except one)
+
+```scss
 $colors: (
    accent-orange: 28 100% 79%,
 );
@@ -185,29 +210,3 @@ Sass partials - more organised (Kevin live stream) - utilities folder + addition
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
-
-```scss
-.compare {
-   @include e(table) {
-      border-collapse: collapse;
-      @include mq(max-width, tablet) {
-         table,
-         thead,
-         tbody,
-         th,
-         td,
-         tr {
-            display: block;
-         }
-
-         .compare__table__header--heading {
-            @include mq(max-width, tablet) {
-               position: absolute;
-               top: -9999px;
-               left: -9999px;
-            }
-         }
-      }
-   }
-}
-```
