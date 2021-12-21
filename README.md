@@ -208,7 +208,7 @@ Grid layout - overlapping practice (using positioning less) | not turning to fle
 
 -  [Build and deploy your portfolio](https://scrimba.com/learn/portfolio) - Scrimba course with Kevin showcases custom animated harmburger
 
--  [Responsive Data Tables](https://css-tricks.com/responsive-data-tables/) - CSS tricks article | multiple responsive techniques with tables - this one used in the design (with a few additions - tick cells next to each-other) | display block for mobile means normal properties start working for these els
+-  [Responsive Data Tables](https://css-tricks.com/responsive-data-tables/) - CSS tricks article | multiple responsive techniques with tables - this one used in the design (with a few additions - tick cells next to each-other) | display block for mobile means normal properties start working for these els (normally don't because strict HTML behaviour)
 
 ## Author
 
