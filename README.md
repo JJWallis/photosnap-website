@@ -187,5 +187,27 @@ Sass partials - more organised (Kevin live stream) - utilities folder + addition
 -  Linkedin - [Joshua Jameson-Wallis]()
 
 ```scss
+.compare {
+   @include e(table) {
+      border-collapse: collapse;
+      @include mq(max-width, tablet) {
+         table,
+         thead,
+         tbody,
+         th,
+         td,
+         tr {
+            display: block;
+         }
 
+         .compare__table__header--heading {
+            @include mq(max-width, tablet) {
+               position: absolute;
+               top: -9999px;
+               left: -9999px;
+            }
+         }
+      }
+   }
+}
 ```
