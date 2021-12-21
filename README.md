@@ -42,6 +42,7 @@ Your users should be able to:
 -  CSS Grid
 -  Mobile-first workflow
 -  Sass - CSS preprocessor
+-  Typescript
 
 ### What I learned
 
@@ -49,11 +50,13 @@ Your users should be able to:
 <h1>Some HTML code I'm proud of</h1>
 ```
 
-```css
-.proud-of-this-css {
-   color: papayawhip;
-}
+```scss
+$colors: (
+   accent-orange: 28 100% 79%,
+);
 ```
+
+Naked HSL colour format - alpha easily changeable (different shades of grey - table borders, colour of body vs btn hover effects)
 
 ```js
 const proudOfThisFunc = () => {
@@ -62,6 +65,8 @@ const proudOfThisFunc = () => {
 ```
 
 ### Continued development
+
+Sass partials - more organised (Kevin live stream) - utilities folder + additional abstract partials (maps broken up)
 
 ### Useful resources
 
@@ -79,10 +84,6 @@ const proudOfThisFunc = () => {
 HTML:
 
 CSS:
-
-Sass partials - more organised (Kevin live stream) - utilities folder | maps broken up
-
-naked HSL colour format - alpha easily changeable
 
 accent bar - repsonsive height to hero content but relative to viewport
 
