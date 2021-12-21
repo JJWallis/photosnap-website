@@ -58,6 +58,49 @@ $colors: (
 
 Naked HSL colour format - alpha easily changeable (different shades of grey - table borders, colour of body vs btn hover effects)
 
+```scss
+.hamburger {
+   &[data-visible='true'] {
+      &::before {
+         transform: rotate(46deg) translate(9px, 2.5px);
+      }
+      &::after {
+         transform: rotate(-46deg) translate(3px, 3px);
+      }
+   }
+}
+```
+
+Hamburger - creating manually with spans + pseudo els of parent button | translate lines to form a cross on click
+
+```scss
+.hero {
+   @include mq(min-width, tablet) {
+      padding-left: clamp(2rem, 6vw, 5rem);
+   }
+}
+```
+
+Accent bar - repsonsive height to hero content but pinned to viewport edge | logical clamp() padding-left = scale with width of utility container-wrapper + adjusted for ultra wide screens
+
+```scss
+.social-list {
+   @include e(item) {
+      position: relative;
+      @include p-el(before) {
+         @include position(absolute);
+      }
+      &:hover {
+         @include p-el(before) {
+            opacity: 0;
+         }
+      }
+   }
+}
+```
+
+Social icons - gradient fill achieved by displaying that version on top of default as pseudo-el (opacity switched on hover)
+
 ```js
 const proudOfThisFunc = () => {
    console.log('🎉')
@@ -84,12 +127,6 @@ Sass partials - more organised (Kevin live stream) - utilities folder + addition
 HTML:
 
 CSS:
-
-accent bar - repsonsive height to hero content but relative to viewport
-
-Hamburger - creating manually with spans + pseudo els of parent button | translate lines to form a cross on click
-
-Social icons - gradient fill achieved by displaying that version on top of default as pseudo-el (opacity transitioned + switched on hover)
 
 Grid offset design - switching fluid imgs + background-imgs (cover space where padding on text items causes fluid grid rows to expand)
 
