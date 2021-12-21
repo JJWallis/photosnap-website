@@ -163,17 +163,15 @@ The last feature I was proud of was using grid to overlap content instead of tur
 
 ### Continued development
 
-Sass partials - more organised (Kevin live stream) - utilities folder + additional abstract partials (maps broken up)
-
-Grid layout - overlapping practice (using positioning less) | not turning to flex immediately (centering content + align-self - don't have with flex)
+I look forward to learning more about grid as a layout tool and using it in areas where at first I may not think it feasible. Not only does that occur with overlapping content, but also keeping content aligned on a single axis where we may naturally want to use flex instead.
 
 ### Useful resources
 
--  [Easily overlap content with CSS Grid](https://www.youtube.com/watch?v=HFG3BKOqOlE&ab_channel=KevinPowell) - Kevin's video for grid section in footer (overlapping nav + grid rows responding based on that)
+-  [Easily overlap content with CSS Grid](https://www.youtube.com/watch?v=HFG3BKOqOlE&ab_channel=KevinPowell) - This was a great short video by Kevin demonstrating how to overlap content with grid, specifically pointing out where most people get stuck and how to avoid that.
 
--  [Build and deploy your portfolio](https://scrimba.com/learn/portfolio) - Scrimba course with Kevin showcases custom animated harmburger
+-  [Build and deploy your portfolio](https://scrimba.com/learn/portfolio) - This course was where I first learnt how to manually create my own custom hamburger, and manipulate its structure on interaction.
 
--  [Responsive Data Tables](https://css-tricks.com/responsive-data-tables/) - CSS tricks article | multiple responsive techniques with tables - this one used in the design (with a few additions - tick cells next to each-other) | display block for mobile means normal properties start working for these els (normally don't because strict HTML behaviour)
+-  [Responsive Data Tables](https://css-tricks.com/responsive-data-tables/) - This CSS Tricks article was my introduction to responsively adjusting a tables design to fit mobile screens, focusing on a specific method which happened to be used in this project.
 
 ## Author
 
