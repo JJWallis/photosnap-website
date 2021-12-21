@@ -96,9 +96,13 @@ The styling of the table also proved to be a major challenge, since by default t
 $colors: (
    accent-orange: 28 100% 79%,
 );
+
+.example {
+   color: hsl(var(--clr-light-grey-body) / 0.7);
+}
 ```
 
-Naked HSL colour format - alpha easily changeable (different shades of grey - table borders, colour of body vs btn hover effects)
+The code above highlights a new methodology I adopted for this project regarding the format of colors I chose to use. I have become a great fan of the more recent `HSL()` format for storing colors, since it provides the most convenient method to modifying the base color. However, I learnt that if you store the hsl color without certain parts of it syntax, you're still able to use it by wrapping your CSS variable (in my case) inside the parenthesis, and easily change the alpha-channel all within the same syntax.
 
 ```scss
 .hamburger {
