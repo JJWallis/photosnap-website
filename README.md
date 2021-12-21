@@ -74,15 +74,13 @@ const proudOfThisFunc = () => {
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
 
-## Acknowledgments
-
 ###### TODO
 
 HTML:
 
 CSS:
 
-Sass partials - more organised (Kevin live stream) - utilities folder | maps broken up |
+Sass partials - more organised (Kevin live stream) - utilities folder | maps broken up
 
 naked HSL colour format - alpha easily changeable
 
@@ -94,4 +92,4 @@ Social icons - gradient fill achieved by displaying that version on top of defau
 
 Grid offset design - switching fluid imgs + background-imgs (cover space where padding on text items causes fluid grid rows to expand)
 
-Stories - clickable links as parent (wrapping everything in links + screwing up grid overlapping layout + position relative bug) |
+Stories - clickable links as parent (wrapping everything in links + screwing up grid overlapping layout + position relative bug)
