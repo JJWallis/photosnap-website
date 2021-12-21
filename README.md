@@ -79,11 +79,13 @@ This project was my first introduction to building and styling HTML tables, whic
          display: block;
       }
 
-      .compare__table__header--heading {
-         @include mq(max-width, tablet) {
-            position: absolute;
-            top: -9999px;
-            left: -9999px;
+      @include e(header) {
+         @include m(heading) {
+            @include mq(max-width, tablet) {
+               position: absolute;
+               top: -9999px;
+               left: -9999px;
+            }
          }
       }
    }
