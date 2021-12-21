@@ -150,12 +150,6 @@ Overlapping content with grid (referenced kevins vid below)
 
 Social icons - gradient fill achieved by displaying that version on top of default as pseudo-el (opacity switched on hover)
 
-```js
-const proudOfThisFunc = () => {
-   console.log('🎉')
-}
-```
-
 ### Continued development
 
 Sass partials - more organised (Kevin live stream) - utilities folder + additional abstract partials (maps broken up)
@@ -176,9 +170,22 @@ Sass partials - more organised (Kevin live stream) - utilities folder + addition
 HTML:
 
 ```html
-<table class="compare__table container-wrapper" role="grid">
+<table>
    <caption class="sr-only">
       Compare pricing features
    </caption>
+   <thead>
+      <tr>
+         <th id="feat" scope="col">The Features</th>
+      </tr>
+   </thead>
+   <tbody>
+      <td headers="basic">
+         <img src="./assets/pricing/desktop/check.svg" alt="" />
+         <p class="sr-only">Feature available</p>
+      </td>
+   </tbody>
 </table>
 ```
+
+Table - first time building + styling tables in a project | accessible - caption even though not visible in design, headers + scope attrs, description of whether feature available (only tick SVG - wouldn't make sense to include in alt) |
