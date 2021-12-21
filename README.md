@@ -46,10 +46,6 @@ Your users should be able to:
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```scss
 $colors: (
    accent-orange: 28 100% 79%,
@@ -117,6 +113,26 @@ Grid offset design - switching fluid imgs + background-imgs (cover space where p
 Accent bar - repsonsive height to hero content but pinned to viewport edge | logical clamp() padding-left = scale with width of utility container-wrapper + adjusted for ultra wide screens
 
 ```scss
+.hero {
+   @include m(stories) {
+      @include mq(min-width, tablet) {
+         background-color: transparent;
+         position: relative;
+         grid-column: 1 / 2;
+         grid-row: 1 / 2;
+
+         @include m(bg) {
+            grid-column: 1 / -1;
+            grid-row: 1 / 2;
+         }
+      }
+   }
+}
+```
+
+Overlapping content with grid (referenced kevins vid below)
+
+```scss
 .social-list {
    @include e(item) {
       position: relative;
@@ -159,6 +175,10 @@ Sass partials - more organised (Kevin live stream) - utilities folder + addition
 
 HTML:
 
-CSS:
-
-Stories - clickable links as parent (wrapping everything in links + screwing up grid overlapping layout + position relative bug)
+```html
+<table class="compare__table container-wrapper" role="grid">
+   <caption class="sr-only">
+      Compare pricing features
+   </caption>
+</table>
+```
