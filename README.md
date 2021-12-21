@@ -65,7 +65,7 @@ Your users should be able to:
 </table>
 ```
 
-Table - first time building + styling tables in a project | accessible - caption even though not visible in design, headers + scope attrs, description of whether feature available (only tick SVG - wouldn't make sense to include in alt)
+This project was my first introduction to building and styling HTML tables, which generally speaking are fairly uncommon in modern web design due to their restrictive nature and niche use-cases. Throughout my implementation I learnt how to semantically structure the markup with `<thead>` and `<tbody>` elements, as well as including a `<caption>` to be read aloud as the title. Beyond this basic structure, I incorporated multiple accessibility features to help visually impaired users navigate through the tables' contents. These features included the `headers` and `scope` attributes, whose presence help define under which columns/rows of data certain table cells and headings live under. I lastly provided an extra paragraph in each cell of data to give more context about whether that specific feature was available or not on its corresponding subscription plan, since by default the only content present was a decorative image with no alternative description.
 
 ```scss
 .compare__table {
