@@ -119,7 +119,7 @@ The code above highlights a new methodology I adopted for this project regarding
 }
 ```
 
-Hamburger - creating manually with spans + pseudo els of parent button | translate lines to form a cross on click
+This was my first attempt at 'manually' creating a hamburger made up of multiple `<span>` elements for the lines, positioned inside a button as the parent. On click, these lines would rotate and translate in on eachother to form a cross, instead of statically changing the default hamburger image to one of a cross.
 
 ```scss
 .grid-container {
