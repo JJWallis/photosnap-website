@@ -74,6 +74,39 @@ Naked HSL colour format - alpha easily changeable (different shades of grey - ta
 Hamburger - creating manually with spans + pseudo els of parent button | translate lines to form a cross on click
 
 ```scss
+.grid-container {
+   @include m(offset) {
+      @include m(pm) {
+         @include mq(min-width, tablet) {
+            grid-template-columns: 1fr auto;
+         }
+         @include mq(min-width, desktop-offset) {
+            grid-template-columns: minmax(500px, 1fr) auto;
+         }
+         @include mq(min-width, ultra-wide) {
+            grid-template-columns: repeat(2, 1fr);
+         }
+      }
+
+      @include mq(min-width, desktop-offset) {
+         @include e(image) {
+            opacity: 0;
+         }
+         @include m(hero) {
+            @include m(home) {
+               @include bg-img(
+                  $img: '../assets/home/desktop/create-and-share.jpg'
+               );
+            }
+         }
+      }
+   }
+}
+```
+
+Grid offset design - switching fluid imgs + background-imgs (cover space where padding on text items causes fluid grid rows to expand) | changing position to keep focus point of img in view (diff for each pic)
+
+```scss
 .hero {
    @include mq(min-width, tablet) {
       padding-left: clamp(2rem, 6vw, 5rem);
@@ -127,7 +160,5 @@ Sass partials - more organised (Kevin live stream) - utilities folder + addition
 HTML:
 
 CSS:
-
-Grid offset design - switching fluid imgs + background-imgs (cover space where padding on text items causes fluid grid rows to expand)
 
 Stories - clickable links as parent (wrapping everything in links + screwing up grid overlapping layout + position relative bug)
