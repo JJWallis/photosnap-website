@@ -142,19 +142,7 @@ This was my first attempt at 'manually' creating a hamburger made up of multiple
 }
 ```
 
-I was really proud of my solution to creating the primary 'offset' design of the hero sections on all pages.
-
-Grid offset design - switching fluid imgs + background-imgs (cover space where padding on text items causes fluid grid rows to expand) | changing position to keep focus point of img in view (diff for each pic)
-
-```scss
-.hero {
-   @include mq(min-width, tablet) {
-      padding-left: clamp(2rem, 6vw, 5rem);
-   }
-}
-```
-
-Accent bar - repsonsive height to hero content but pinned to viewport edge | logical clamp() padding-left = scale with width of utility container-wrapper + adjusted for ultra wide screens
+I was really proud of my solution to creating the primary 'offset' design of the hero sections on all pages. I ran into a number of bugs where grid would automatically adjust the heights of each row to match the amount of padding I had applied to each item. This produced a lot of undesired white space under each item housing an image, which I was able to solve by toggling the foreground image invisible, whilst including a background image which would cover all remaining space available. I still included the foreground image in the DOM to avoid that column from collapsing with a size of `auto`, which also created that uneven effect present in the original design.
 
 ```scss
 .hero {
@@ -175,24 +163,6 @@ Accent bar - repsonsive height to hero content but pinned to viewport edge | log
 ```
 
 Overlapping content with grid (referenced kevins vid below)
-
-```scss
-.social-list {
-   @include e(item) {
-      position: relative;
-      @include p-el(before) {
-         @include position(absolute);
-      }
-      &:hover {
-         @include p-el(before) {
-            opacity: 0;
-         }
-      }
-   }
-}
-```
-
-Social icons - gradient fill achieved by displaying that version on top of default as pseudo-el (opacity switched on hover)
 
 ### Continued development
 
