@@ -115,8 +115,7 @@ The code above highlights a new methodology I adopted for this project regarding
       &::after {
          transform: rotate(-46deg) translate(3px, 3px);
       }
-   }
-}
+      ...
 ```
 
 This was my first attempt at 'manually' creating a hamburger made up of multiple `<span>` elements for the lines, positioned inside a parent button. On click, these lines would rotate and translate in on eachother to form a cross, instead of statically changing the image itself.
@@ -135,11 +134,7 @@ This was my first attempt at 'manually' creating a hamburger made up of multiple
                      $img: '../assets/home/desktop/create-and-share.jpg'
                   );
                }
-            }
-         }
-      }
-   }
-}
+               ...
 ```
 
 I was really proud of my solution to creating the primary 'offset' design of the hero sections on all pages. I ran into a number of bugs where grid would automatically adjust the heights of each row to match the amount of padding I had applied to each item. This produced a lot of undesired white space under each item housing an image, which I was able to solve by toggling the foreground image invisible, whilst including a background image which would cover all remaining space available. I still included the foreground image in the DOM to avoid that column from collapsing with a size of `auto`, which also created that uneven effect present in the original design.
@@ -154,9 +149,7 @@ I was really proud of my solution to creating the primary 'offset' design of the
             grid-column: 1 / -1;
             grid-row: 1 / 2;
          }
-      }
-   }
-}
+     ...
 ```
 
 The last feature I was proud of was using Grid to overlap content instead of turning to positioning by default. This is something you have to explicitly tell grid to allow, since by default it assumes you never want that to happen, but it provides a much more coherent syntax as it's all controlled from the parent container itself.
