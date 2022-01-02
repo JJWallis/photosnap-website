@@ -65,7 +65,7 @@ Your users should be able to:
 </table>
 ```
 
-This project was my first introduction to building and styling HTML tables, which generally speaking are fairly uncommon in modern web design due to their restrictive nature and niche use-cases. Throughout my implementation I learnt how to semantically structure the markup with `<thead>` and `<tbody>` elements, as well as including a `<caption>` to be read aloud as the title. Beyond this basic structure, I incorporated multiple accessibility features to help visually impaired users navigate through the tables' contents. These features included the `headers` and `scope` attributes, whose presence help define under which columns/rows of data certain table cells and headings live under. I lastly provided an extra paragraph in each cell of data to give more context about whether that specific feature was available or not on its corresponding subscription plan, since by default the only content present was a decorative image with no alternative description.
+This project was my first introduction to building and styling HTML tables, which generally speaking are fairly uncommon in modern web design due to their restrictive nature and niche use cases. Throughout my implementation, I learnt how to semantically structure the markup with `<thead>` and `<tbody>` elements, as well as including a `<caption>` to be read aloud as the title. Beyond this basic structure, I incorporated multiple accessibility features to help visually impaired users navigate through the tables' contents. These features included the `headers` and `scope` attributes, whose presence help define under which columns and rows certain table cells and headings live under. I lastly provided an extra paragraph in each cell of data to give more context about whether that specific feature was available or not, since by default the only content present was a decorative tick icon which required no alternative description.
 
 ```scss
 .compare__table {
@@ -92,7 +92,7 @@ This project was my first introduction to building and styling HTML tables, whic
 }
 ```
 
-The styling of the table also proved to be a major challenge, since by default they have a restrictive nature where a lot of box model properties don't have any effect. In order to force the table to respond to mobile devices, I had to override all the required table-based elements with a `display:block` to remove their default styling and behaviour. From there I had more freedom to experiment with different properties (margin and width) to create the mobile design provided. Additionally, I adjusted the default alignment of content from centered to left-aligned, as well as using pseudo elements to create the table headings/labels since the ones present in the header were only rendered visible beyond tablet devices.
+The styling of the table also proved to be a major challenge, since by default tables have a restrictive nature where a lot of box model properties don't have any effect. In order to force the table to respond to mobile devices, I had to override all the required table-based elements with a `display:block` to remove their default styling and behaviour. From there I had more freedom to experiment with different properties (margin and width) to create the mobile design provided. Additionally, I adjusted the default alignment of content from centered to left-aligned, as well as using pseudo elements to create the table headings and labels, since the ones present in the header were only rendered visible beyond tablet devices.
 
 ```scss
 $colors: (
@@ -176,4 +176,4 @@ I look forward to learning more about grid as a layout tool and using it in area
 ## Author
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
--  Linkedin - [Joshua Jameson-Wallis]()
+-  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
