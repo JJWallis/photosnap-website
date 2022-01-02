@@ -37,11 +37,11 @@ Your users should be able to:
 ### Built with
 
 -  Semantic HTML5 markup
+-  Mobile-first workflow
 -  CSS custom properties
 -  Flexbox
 -  CSS Grid
--  Mobile-first workflow
--  Sass - CSS preprocessor
+-  Sass
 -  Typescript
 
 ### What I learned
