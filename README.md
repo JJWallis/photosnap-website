@@ -104,7 +104,7 @@ $colors: (
 }
 ```
 
-The code above highlights a new methodology I adopted for this project regarding the format of colors I chose to use. I have become a great fan of the more recent `HSL()` format for storing colors, since it provides the most convenient method to modifying the base color. However, I learnt that if you store the hsl color without certain parts of it syntax, you're still able to use it by wrapping your CSS variable (in my case) inside the parenthesis, and easily change the alpha-channel all within the same syntax.
+The code above highlights a new methodology I adopted for this project regarding the format of colors I chose to use. I have become a great fan of the more recent `HSL()` format for storing colors, since it provides the most convenient method to modifying the base color. However, I learnt that if you store the hsl color without certain parts of its syntax, you're still able to use it by wrapping your CSS variable inside the parenthesis, easily changing the alpha-channel within the same syntax.
 
 ```scss
 .hamburger {
@@ -119,7 +119,7 @@ The code above highlights a new methodology I adopted for this project regarding
 }
 ```
 
-This was my first attempt at 'manually' creating a hamburger made up of multiple `<span>` elements for the lines, positioned inside a button as the parent. On click, these lines would rotate and translate in on eachother to form a cross, instead of statically changing the default hamburger image to one of a cross.
+This was my first attempt at 'manually' creating a hamburger made up of multiple `<span>` elements for the lines, positioned inside a parent button. On click, these lines would rotate and translate in on eachother to form a cross, instead of statically changing the image itself.
 
 ```scss
 .grid-container {
@@ -159,11 +159,11 @@ I was really proud of my solution to creating the primary 'offset' design of the
 }
 ```
 
-The last feature I was proud of was using grid to overlap content instead of turning to positioning by default. This is something you have to explicitly tell grid to allow since by default it assumes you never want that to happen, but it provides a much more coherent syntax as it's all controlled from the parent container itself.
+The last feature I was proud of was using Grid to overlap content instead of turning to positioning by default. This is something you have to explicitly tell grid to allow, since by default it assumes you never want that to happen, but it provides a much more coherent syntax as it's all controlled from the parent container itself.
 
 ### Continued development
 
-I look forward to learning more about grid as a layout tool and using it in areas where at first I may not think it feasible. Not only does that occur with overlapping content, but also keeping content aligned on a single axis where we may naturally want to use flex instead.
+I look forward to learning more about Grid as a layout tool and using it in areas where at first I may not think it feasible. Not only does that occur with overlapping content, but also keeping content aligned on a single axis where we may naturally want to use Flexbox instead.
 
 ### Useful resources
 
@@ -171,7 +171,7 @@ I look forward to learning more about grid as a layout tool and using it in area
 
 -  [Build and deploy your portfolio](https://scrimba.com/learn/portfolio) - This course was where I first learnt how to manually create my own custom hamburger, and manipulate its structure on interaction.
 
--  [Responsive Data Tables](https://css-tricks.com/responsive-data-tables/) - This CSS Tricks article was my introduction to responsively adjusting a tables design to fit mobile screens, focusing on a specific method which happened to be used in this project.
+-  [Responsive Data Tables](https://css-tricks.com/responsive-data-tables/) - This CSS Tricks article was my introduction to responsively adjusting a tables' design to fit mobile screens, focusing on a specific method which happened to be used in this project.
 
 ## Author
 
