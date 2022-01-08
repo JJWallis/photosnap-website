@@ -88,7 +88,9 @@ $colors: (
 }
 ```
 
-The code above highlights a new methodology I adopted for this project regarding the format of colors I chose to use. I have become a great fan of the more recent `HSL()` format for storing colors, since it provides the most convenient method to modifying the base color. However, I learnt that if you store the hsl color without certain parts of its syntax, you're still able to use it by wrapping your CSS variable inside the parenthesis, easily changing the alpha-channel within the same syntax.
+Recently I have become a great fan of the `HSL()` format for storing colors since it provides the most convenient method to modifying the base color, such as changing its shade by adjusting the last percentage value.
+
+However, I learnt that if you store the hsl color without certain parts of its syntax, you're still able to use it by wrapping your CSS variable inside the parenthesis, easily changing the alpha-channel within the same syntax.
 
 ```scss
 .hamburger {
@@ -99,10 +101,11 @@ The code above highlights a new methodology I adopted for this project regarding
       &::after {
          transform: rotate(-46deg) translate(3px, 3px);
       }
-      ...
+   }
+}
 ```
 
-This was my first attempt at 'manually' creating a hamburger made up of multiple `<span>` elements for the lines, positioned inside a parent button. On click, these lines would rotate and translate in on eachother to form a cross, instead of statically changing the image itself.
+This was my first attempt at 'manually' creating a hamburger made up of multiple `<span>` elements for the lines, whilst all being positioned inside a parent button. On click, these lines would rotate and translate in on eachother to form a cross, instead of statically changing the image itself.
 
 ```scss
 .grid-container {
