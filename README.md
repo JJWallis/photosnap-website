@@ -110,21 +110,21 @@ This was my first attempt at 'manually' creating a hamburger made up of multiple
 ```scss
 .grid-container {
    @include m(offset) {
-      @include m(pm) {
-         @include mq(min-width, desktop-offset) {
-            @include e(image) {
-               opacity: 0;
-            }
-            @include m(hero) {
-               @include m(home) {
-                  @include bg-img(
-                     $img: '../assets/home/desktop/create-and-share.jpg'
-                  );
-               }
-               ...
+      @include mq(min-width, desktop-offset) {
+         @include e(image) {
+            opacity: 0;
+            @include bg-img(
+               $img: '../assets/home/desktop/create-and-share.jpg'
+            );
+         }
+      }
+   }
+}
 ```
 
-I was really proud of my solution to creating the primary 'offset' design of the hero sections on all pages. I ran into a number of bugs where grid would automatically adjust the heights of each row to match the amount of padding I had applied to each item. This produced a lot of undesired white space under each item housing an image, which I was able to solve by toggling the foreground image invisible, whilst including a background image which would cover all remaining space available. I still included the foreground image in the DOM to avoid that column from collapsing with a size of `auto`, which also created that uneven effect present in the original design.
+I was really proud of my solution at creating the primary 'offset' design of the hero sections, where I ran into a number of bugs where grid would automatically adjust the heights of each row to match the amount of padding I had applied to each item.
+
+This produced a lot of undesired white space under each item housing an image, which I was able to solve by toggling the foreground image invisible, whilst including a background image which would cover all remaining space available. I still included the foreground image in the DOM to avoid that column from collapsing due to its size of `auto`.
 
 ```scss
 .hero {
@@ -136,10 +136,12 @@ I was really proud of my solution to creating the primary 'offset' design of the
             grid-column: 1 / -1;
             grid-row: 1 / 2;
          }
-     ...
+      }
+   }
+}
 ```
 
-The last feature I was proud of was using Grid to overlap content instead of turning to positioning by default. This is something you have to explicitly tell grid to allow, since by default it assumes you never want that to happen, but it provides a much more coherent syntax as it's all controlled from the parent container itself.
+I was also proud of my ability to use Grid to overlap content instead of turning to positioning by default. This is something you have to explicitly tell grid to allow since it assumes you never want that to happen, but it provides a much more coherent syntax as it's all controlled from the parent container itself.
 
 ### Continued development
 
