@@ -70,21 +70,13 @@ Beyond this basic structure, I incorporated multiple accessibility features to h
       tr {
          display: block;
       }
-
-      @include e(header) {
-         @include m(heading) {
-            @include mq(max-width, tablet) {
-               position: absolute;
-               top: -9999px;
-               left: -9999px;
-            }
-         }
-      }
    }
 }
 ```
 
-The styling of the table also proved to be a major challenge, since by default tables have a restrictive nature where a lot of box model properties don't have any effect. In order to force the table to respond to mobile devices, I had to override all the required table-based elements with a `display:block` to remove their default styling and behaviour. From there I had more freedom to experiment with different properties (margin and width) to create the mobile design provided. Additionally, I adjusted the default alignment of content from centered to left-aligned, as well as using pseudo elements to create the table headings and labels, since the ones present in the header were only rendered visible beyond tablet devices.
+In order to force the table to respond to mobile devices, I had to override all the required table-based elements with a `display: block` to remove their default styling and behaviour. From there I had more freedom to experiment with different properties to match the mobile design provided, including traditional box model properties.
+
+Additionally, I adjusted the default alignment of content from centered to left-aligned, as well as using pseudo elements to create the table headings and labels, since the ones present in the header were only rendered visible beyond tablet devices.
 
 ```scss
 $colors: (
