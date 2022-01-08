@@ -145,13 +145,13 @@ I was also proud of my ability to use Grid to overlap content instead of turning
 
 ### Continued development
 
-I look forward to learning more about Grid as a layout tool and using it in areas where at first I may not think it feasible. Not only does that occur with overlapping content, but also keeping content aligned on a single axis where we may naturally want to use Flexbox instead.
+I look forward to learning more about Grid as a layout tool and using it in areas where at first I may not think it feasible. Not only does that occur with overlapping content, but also with keeping content aligned on a single axis where naturally we may want to use Flexbox instead.
 
 ### Useful resources
 
--  [Easily overlap content with CSS Grid](https://www.youtube.com/watch?v=HFG3BKOqOlE&ab_channel=KevinPowell) - This was a great short video by Kevin demonstrating how to overlap content with grid, specifically pointing out where most people get stuck and how to avoid that.
+-  [Easily overlap content with CSS Grid](https://www.youtube.com/watch?v=HFG3BKOqOlE&ab_channel=KevinPowell) - This was a great short video by Kevin demonstrating how to overlap content with Grid, specifically pointing out where most people get stuck and how to avoid that.
 
--  [Build and deploy your portfolio](https://scrimba.com/learn/portfolio) - This course was where I first learnt how to manually create my own custom hamburger, and manipulate its structure on interaction.
+-  [Build and deploy your portfolio](https://scrimba.com/learn/portfolio) - This course was where I first learnt how to manually create my own custom hamburger and manipulate its structure on interaction.
 
 -  [Responsive Data Tables](https://css-tricks.com/responsive-data-tables/) - This CSS Tricks article was my introduction to responsively adjusting a tables' design to fit mobile screens, focusing on a specific method which happened to be used in this project.
 
