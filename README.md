@@ -157,5 +157,5 @@ I look forward to learning more about Grid as a layout tool and using it in area
 
 ## Author
 
--  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
+-  Website - [Joshua Jameson-Wallis](https://www.joshuajamesonwallis.com/)
 -  Linkedin - [Joshua Jameson-Wallis](https://www.linkedin.com/in/joshua-jameson-wallis/)
